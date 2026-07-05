@@ -2,25 +2,24 @@ header{
 
     position:fixed;
 
-    width:100%;
-
     top:0;
-
     left:0;
 
-    z-index:999;
+    width:100%;
 
-    backdrop-filter:blur(18px);
+    z-index:1000;
 
-    background:rgba(15,9,24,.75);
+    background:rgba(9,5,17,.90);
+
+    backdrop-filter:blur(20px);
 
     border-bottom:1px solid var(--border);
 
 }
 
-nav{
+.navbar{
 
-    width:90%;
+    width:min(90%, var(--container));
 
     margin:auto;
 
@@ -36,7 +35,9 @@ nav{
 
 .logo{
 
-    font-size:28px;
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:1.5rem;
 
     font-weight:700;
 
@@ -44,17 +45,25 @@ nav{
 
 }
 
-nav ul{
+.nav-links{
 
     display:flex;
 
     gap:35px;
 
+    list-style:none;   /* ← THIS IS WHAT WAS MISSING */
+
 }
 
-nav a{
+.nav-links li{
 
-    color:white;
+    list-style:none;   /* extra safety */
+
+}
+
+.nav-links a{
+
+    color:var(--white);
 
     font-weight:500;
 
@@ -62,7 +71,7 @@ nav a{
 
 }
 
-nav a:hover{
+.nav-links a:hover{
 
     color:var(--primary-light);
 
