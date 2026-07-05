@@ -1,0 +1,30 @@
+:root{
+
+    /* Backgrounds */
+    --bg-main:#090511;
+    --bg-secondary:#120B1F;
+    --bg-card:#1A1328;
+
+    /* Brand Colors */
+    --primary:#8A63FF;
+    --primary-dark:#6E44F2;
+    --primary-light:#D8C4FF;
+
+    /* Text */
+    --white:#FFFFFF;
+    --text:#E5DFF5;
+    --text-light:#B8B0D3;
+
+    /* Borders */
+    --border:rgba(255,255,255,.08);
+
+    /* Shadows */
+    --shadow:0 20px 50px rgba(0,0,0,.35);
+
+    /* Border Radius */
+    --radius:20px;
+
+    /* Container Width */
+    --container:1200px;
+
+}

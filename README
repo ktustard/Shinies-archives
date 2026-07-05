@@ -1,0 +1,61 @@
+# The Sheena Archive
+
+A digital fan archive dedicated to BINI Sheena.
+
+## Goals
+
+- Create a beautiful archive website.
+- Learn HTML, CSS, and JavaScript from scratch.
+- Learn Git and GitHub.
+- Build a responsive website.
+- Add interactive games and features.
+- Deploy the website for free.
+
+## Progress
+
+- [x] Project setup
+- [x] Git initialized
+- [x] First commit
+- [x] Hero section started
+- [ ] Responsive layout
+- [ ] Timeline
+- [ ] Gallery
+- [ ] Games
+- [ ] Deployment
+
+
+
+
+┌────────────────────────────────────────────┐
+│                                            │
+│             INTRO EXPERIENCE               │
+│                                            │
+└────────────────────────────────────────────┘
+                    ↓
+┌────────────────────────────────────────────┐
+│               HOME HERO                    │
+└────────────────────────────────────────────┘
+                    ↓
+┌────────────────────────────────────────────┐
+│         TODAY IN SHEENA HISTORY            │
+└────────────────────────────────────────────┘
+                    ↓
+┌────────────────────────────────────────────┐
+│            FEATURED MEMORY                 │
+└────────────────────────────────────────────┘
+                    ↓
+┌────────────────────────────────────────────┐
+│           JOURNEY TIMELINE                 │
+└────────────────────────────────────────────┘
+                    ↓
+┌────────────────────────────────────────────┐
+│            PHOTO GALLERY                   │
+└────────────────────────────────────────────┘
+                    ↓
+┌────────────────────────────────────────────┐
+│             LATEST NEWS                    │
+└────────────────────────────────────────────┘
+                    ↓
+┌────────────────────────────────────────────┐
+│              FOOTER                        │
+└────────────────────────────────────────────┘
