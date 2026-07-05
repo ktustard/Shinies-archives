@@ -89,3 +89,39 @@ nav a:hover {
 
     color: #C7A7FF;
 }
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px;
+
+    min-height: 80vh;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    color: #C7A7FF;
+}
+
+.hero-text p {
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.hero-image {
+    width: 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
