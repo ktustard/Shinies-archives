@@ -1,0 +1,91 @@
+/* This styles the entire page */
+body {
+    background-color: #120A1F;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 100px;
+}
+
+/* Big title */
+h1 {
+    color: #C7A7FF;
+    font-size: 60px;
+}
+
+/* Paragraph */
+p {
+    font-size: 22px;
+    color: #E7D9FF;
+}
+
+/* Button */
+button {
+    background-color: #5E2B8A;
+    color: white;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #8D52C5;
+}
+
+/* ---------- Navigation Bar ---------- */
+
+nav {
+    background-color: #25103A;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+}
+
+nav h2 {
+    color: #C7A7FF;
+
+    margin: 0;
+}
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+
+    color: #C7A7FF;
+}
