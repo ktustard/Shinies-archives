@@ -1,12 +1,14 @@
-async function loadTimeline() {
+async function loadTimeline(){
 
     const response = await fetch("data/timeline.json");
 
-    const timeline = await response.json();
+    const data = await response.json();
 
     const container = document.getElementById("timeline-container");
 
-    timeline.forEach(item => {
+    container.innerHTML = "";
+
+    data.forEach(item=>{
 
         container.innerHTML += `
 
@@ -14,7 +16,9 @@ async function loadTimeline() {
 
             <div class="timeline-dot"></div>
 
-            <p class="timeline-year">${item.year}</p>
+            <div class="timeline-year">
+                ${item.year}
+            </div>
 
             <div class="timeline-card">
 

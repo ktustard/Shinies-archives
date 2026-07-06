@@ -1,0 +1,73 @@
+[
+    {
+        "id":"pbb",
+        "title":"PBB Otso",
+        "year":"2018",
+        "hero":"../images/eras/pbb.jpg",
+        "description":"Sheena's first appearance on national television."
+    },
+
+    {
+        "id":"sha",
+        "title":"Star Hunt Academy",
+        "year":"2019–2020",
+        "hero":"../images/eras/sha.jpg",
+        "description":"The training period before debut."
+    },
+
+    {
+        "id":"dcn",
+        "title":"Da Coconut Nut",
+        "year":"2020",
+        "hero":"../images/eras/dcn.jpg",
+        "description":"BINI's pre-debut single."
+    },
+
+    {
+        "id":"borntowin",
+        "title":"Born To Win",
+        "year":"2021",
+        "hero":"../images/eras/borntowin.jpg",
+        "description":"The official debut era."
+    },
+
+    {
+        "id":"feelgood",
+        "title":"Feel Good",
+        "year":"2022",
+        "hero":"../images/eras/feelgood.jpg",
+        "description":"The era of I Feel Good and Lagi."
+    },
+
+    {
+        "id":"pantropiko",
+        "title":"Pantropiko / Talaarawan",
+        "year":"2023–2024",
+        "hero":"../images/eras/pantropiko.jpg",
+        "description":"The breakthrough era that introduced BINI to millions."
+    },
+
+    {
+        "id":"biniverse",
+        "title":"BINIverse World Tour",
+        "year":"2024–2025",
+        "hero":"../images/eras/biniverse.jpg",
+        "description":"BINI's first international concert tour."
+    },
+
+    {
+        "id":"coachella",
+        "title":"Coachella Era",
+        "year":"2026",
+        "hero":"../images/eras/coachella.jpg",
+        "description":"Historic performance as the first Filipino act at Coachella."
+    },
+
+    {
+        "id":"signals",
+        "title":"Signals Era",
+        "year":"2026–Present",
+        "hero":"../images/eras/signals.jpg",
+        "description":"Global promotions, Summer Sonic, and the Signals album."
+    }
+]

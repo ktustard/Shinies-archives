@@ -1,0 +1,71 @@
+.discography{
+
+    width:min(1200px,90%);
+    margin:auto;
+    padding:140px 0;
+
+}
+
+.album-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.album-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.album-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+.album-card img{
+
+    width:100%;
+
+    aspect-ratio:1;
+
+    object-fit:cover;
+
+}
+
+.album-info{
+
+    padding:20px;
+
+}
+
+.album-info h3{
+
+    margin-bottom:10px;
+
+}
+
+.album-info p{
+
+    color:rgba(255,255,255,.7);
+
+    font-size:.9rem;
+
+}

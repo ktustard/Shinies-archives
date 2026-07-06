@@ -1,0 +1,38 @@
+[
+    {
+        "title":"Da Coconut Nut",
+        "year":"2020",
+        "type":"Pre-Debut Single",
+        "cover":"images/discography/dacoconutnut.jpg"
+    },
+    {
+        "title":"Born To Win",
+        "year":"2021",
+        "type":"Studio Album",
+        "cover":"images/discography/borntowin.jpg"
+    },
+    {
+        "title":"Feel Good",
+        "year":"2022",
+        "type":"Studio Album",
+        "cover":"images/discography/feelgood.jpg"
+    },
+    {
+        "title":"Talaarawan",
+        "year":"2024",
+        "type":"EP",
+        "cover":"images/discography/talaarawan.jpg"
+    },
+    {
+        "title":"FLAMES",
+        "year":"2025",
+        "type":"Studio Album",
+        "cover":"images/discography/flames.jpg"
+    },
+    {
+        "title":"SIGNALS",
+        "year":"2026",
+        "type":"Studio Album",
+        "cover":"images/discography/signals.jpg"
+    }
+]
