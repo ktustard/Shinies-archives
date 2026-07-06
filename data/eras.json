@@ -1,73 +1,163 @@
 [
-    {
-        "id":"pbb",
-        "title":"PBB Otso",
-        "year":"2018",
-        "hero":"../images/eras/pbb.jpg",
-        "description":"Sheena's first appearance on national television."
-    },
+  {
+    "id": "pbb",
+    "title": "PBB Otso",
+    "year": "2018",
+    "hero": "../images/eras/pbb.jpg",
+    "description": "Sheena Catacutan first appeared on national television as a housemate of Pinoy Big Brother: Otso. This marked the beginning of her journey in the entertainment industry.",
+    "songs": [],
+    "achievements": [
+      "First national television appearance",
+      "Introduced to millions of Filipino viewers"
+    ],
+    "gallery": [
+      "../images/eras/pbb.jpg"
+    ]
+  },
 
-    {
-        "id":"sha",
-        "title":"Star Hunt Academy",
-        "year":"2019–2020",
-        "hero":"../images/eras/sha.jpg",
-        "description":"The training period before debut."
-    },
+  {
+    "id": "sha",
+    "title": "Star Hunt Academy",
+    "year": "2019–2020",
+    "hero": "../images/eras/sha.jpg",
+    "description": "After PBB, Sheena entered Star Hunt Academy where she trained extensively in singing, dancing, and performing before debuting as a member of BINI.",
+    "songs": [],
+    "achievements": [
+      "Completed idol training",
+      "Became one of the final eight trainees"
+    ],
+    "gallery": [
+      "../images/eras/sha.jpg"
+    ]
+  },
 
-    {
-        "id":"dcn",
-        "title":"Da Coconut Nut",
-        "year":"2020",
-        "hero":"../images/eras/dcn.jpg",
-        "description":"BINI's pre-debut single."
-    },
+  {
+    "id": "dcn",
+    "title": "Da Coconut Nut",
+    "year": "2020",
+    "hero": "../images/eras/dcn.jpg",
+    "description": "BINI officially introduced themselves through their pre-debut remake of Ryan Cayabyab's Da Coconut Nut.",
+    "songs": [
+      "Da Coconut Nut"
+    ],
+    "achievements": [
+      "Official pre-debut release",
+      "Introduced BINI to the public"
+    ],
+    "gallery": [
+      "../images/eras/dcn.jpg"
+    ]
+  },
 
-    {
-        "id":"borntowin",
-        "title":"Born To Win",
-        "year":"2021",
-        "hero":"../images/eras/borntowin.jpg",
-        "description":"The official debut era."
-    },
+  {
+    "id": "borntowin",
+    "title": "Born To Win",
+    "year": "2021",
+    "hero": "../images/eras/borntowin.jpg",
+    "description": "BINI officially debuted with Born To Win, beginning their professional career as the Nation's Girl Group.",
+    "songs": [
+      "Born To Win",
+      "Kapit Lang"
+    ],
+    "achievements": [
+      "Official debut",
+      "Released first studio album"
+    ],
+    "gallery": [
+      "../images/eras/borntowin.jpg"
+    ]
+  },
 
-    {
-        "id":"feelgood",
-        "title":"Feel Good",
-        "year":"2022",
-        "hero":"../images/eras/feelgood.jpg",
-        "description":"The era of I Feel Good and Lagi."
-    },
+  {
+    "id": "feelgood",
+    "title": "Feel Good",
+    "year": "2022",
+    "hero": "../images/eras/feelgood.jpg",
+    "description": "The Feel Good era established BINI's signature bright and youthful sound through songs that became fan favorites.",
+    "songs": [
+      "I Feel Good",
+      "Lagi"
+    ],
+    "achievements": [
+      "Released second album",
+      "Expanded fanbase"
+    ],
+    "gallery": [
+      "../images/eras/feelgood.jpg"
+    ]
+  },
 
-    {
-        "id":"pantropiko",
-        "title":"Pantropiko / Talaarawan",
-        "year":"2023–2024",
-        "hero":"../images/eras/pantropiko.jpg",
-        "description":"The breakthrough era that introduced BINI to millions."
-    },
+  {
+    "id": "pantropiko",
+    "title": "Pantropiko / Talaarawan",
+    "year": "2023–2024",
+    "hero": "../images/eras/pantropiko.jpg",
+    "description": "Pantropiko became a nationwide phenomenon followed by Talaarawan, launching BINI into mainstream success.",
+    "songs": [
+      "Karera",
+      "Pantropiko",
+      "Salamin, Salamin",
+      "Cherry On Top"
+    ],
+    "achievements": [
+      "Nationwide breakthrough",
+      "Massive TikTok success",
+      "Mainstream popularity"
+    ],
+    "gallery": [
+      "../images/eras/pantropiko.jpg"
+    ]
+  },
 
-    {
-        "id":"biniverse",
-        "title":"BINIverse World Tour",
-        "year":"2024–2025",
-        "hero":"../images/eras/biniverse.jpg",
-        "description":"BINI's first international concert tour."
-    },
+  {
+    "id": "biniverse",
+    "title": "BINIverse World Tour",
+    "year": "2024–2025",
+    "hero": "../images/eras/biniverse.jpg",
+    "description": "BINI embarked on their first major international tour, expanding their global reach and preparing for even larger stages.",
+    "songs": [],
+    "achievements": [
+      "First international tour",
+      "Expanded global fanbase",
+      "Prepared for Coachella"
+    ],
+    "gallery": [
+      "../images/eras/biniverse.jpg"
+    ]
+  },
 
-    {
-        "id":"coachella",
-        "title":"Coachella Era",
-        "year":"2026",
-        "hero":"../images/eras/coachella.jpg",
-        "description":"Historic performance as the first Filipino act at Coachella."
-    },
+  {
+    "id": "coachella",
+    "title": "Coachella Era",
+    "year": "2026",
+    "hero": "../images/eras/coachella.jpg",
+    "description": "BINI made history as the first Filipino act to perform at Coachella, bringing P-pop to one of the world's biggest music festivals.",
+    "songs": [],
+    "achievements": [
+      "First Filipino act at Coachella",
+      "Historic international performance"
+    ],
+    "gallery": [
+      "../images/eras/coachella.jpg"
+    ]
+  },
 
-    {
-        "id":"signals",
-        "title":"Signals Era",
-        "year":"2026–Present",
-        "hero":"../images/eras/signals.jpg",
-        "description":"Global promotions, Summer Sonic, and the Signals album."
-    }
+  {
+    "id": "signals",
+    "title": "Signals Era",
+    "year": "2026–Present",
+    "hero": "../images/eras/signals.jpg",
+    "description": "The Signals era represents BINI's continued global expansion through their third album, Summer Sonic, and worldwide promotions.",
+    "songs": [
+      "Blink Twice"
+    ],
+    "achievements": [
+      "Released third album",
+      "Performed at Summer Sonic Japan",
+      "Continued global promotions"
+    ],
+    "gallery": [
+      "../images/eras/signals.jpg"
+    ]
+  }
 ]
