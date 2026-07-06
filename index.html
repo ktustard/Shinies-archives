@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/discography.css">
     <link rel="stylesheet" href="css/eras.css">
+    <link rel="stylesheet" href="css/animations.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -33,25 +34,32 @@
             🌙 BINI Sheena Archive
         </div>
 
-        <ul class="nav-links">
+<ul class="nav-links">
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Journey</a></li>
-            <li><a href="#">Discography</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Games</a></li>
+    <li><a href="#hero">Home</a></li>
 
-        </ul>
+    <li><a href="#about">About</a></li>
+
+    <li><a href="#timeline">Journey</a></li>
+
+    <li><a href="#discography">Discography</a></li>
+
+    <li><a href="#achievements">Achievements</a></li>
+
+    <li><a href="#articles">Articles</a></li>
+
+    <li><a href="#games">Games</a></li>
+
+</ul>
 
     </nav>
 
 </header>
 
-<section class="hero">
+<section id="hero" class="hero">
 
-    <div class="hero-content">
+    <div class="hero-content reveal-left">
+        
 
         <p class="hero-small">
             A DIGITAL MUSEUM DEDICATED TO
@@ -80,7 +88,7 @@
 
     </div>
 
-    <div class="hero-image">
+    <div class="hero-image reveal-right">
 
         <img
         src="images/hero/sheena-placeholder.png.jpeg"
@@ -92,7 +100,7 @@
 
 <section id="about" class="about">
 
-    <p class="section-subtitle">
+    <p class="section-subtitle reveal">
         Discover
     </p>
 
@@ -185,13 +193,13 @@
 
 <section class="eras" id="eras">
 
-    <p class="section-subtitle">
-        Featured
-    </p>
+    <p class="section-subtitle reveal">
+    Featured
+</p>
 
-    <h2 class="section-title">
-        Career Eras
-    </h2>
+<h2 class="section-title reveal delay-1">
+    Career Eras
+</h2>
 
     <div class="eras-list">
 
@@ -397,7 +405,7 @@
 
 </section>
 
-<section class="discography" id="discography">
+<section id="discography" class="discography">
 
     <p class="section-subtitle">
         BINI
@@ -412,11 +420,21 @@
     </div>
 
 </section>
+<section id="achievements" class="achievements">
+
+</section>
+<section id="articles" class="articles">
+
+</section>
+<section id="games" class="games">
+    
+</section>
 
 <script src="js/navbar.js"></script>
 <script src="js/script.js"></script>
 <script src="js/timeline.js"></script>
 <script src="js/discography.js"></script>
+<script src="js/animations.js"></script>
 
 </body>
 </html>

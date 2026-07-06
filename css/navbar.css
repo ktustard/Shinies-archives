@@ -50,15 +50,10 @@ header{
 }
 
 .nav-links a{
-
+    text-decoration:none;
     color:white;
-
-    font-weight:500;
-
     position:relative;
-
     transition:.3s;
-
 }
 
 .nav-links a:hover{
@@ -70,17 +65,15 @@ header{
 .nav-links a::after{
 
     content:"";
-
     position:absolute;
-
     left:0;
     bottom:-8px;
 
     width:0;
+    height:3px;
 
-    height:2px;
-
-    background:var(--primary);
+    background:#b57cff;
+    border-radius:10px;
 
     transition:.3s;
 
@@ -89,5 +82,16 @@ header{
 .nav-links a:hover::after{
 
     width:100%;
+
+}
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+.nav-links a.active{
+
+    color:#c084fc;
 
 }

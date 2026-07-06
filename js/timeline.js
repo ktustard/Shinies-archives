@@ -1,4 +1,4 @@
-async function loadTimeline(){
+async function loadTimeline() {
 
     const response = await fetch("data/timeline.json");
 
@@ -8,11 +8,13 @@ async function loadTimeline(){
 
     container.innerHTML = "";
 
-    data.forEach(item=>{
+    data.forEach((item, index) => {
+
+        const delay = (index % 6) + 1;
 
         container.innerHTML += `
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal delay-${delay}">
 
             <div class="timeline-dot"></div>
 

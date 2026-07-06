@@ -1,1 +1,1 @@
-alert("Welcome to Bini Sheena's Archives!");
+//alert("Welcome to Bini Sheena's Archives!");
