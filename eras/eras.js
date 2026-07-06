@@ -30,6 +30,25 @@ fetch("../data/eras.json")
 
     // OVERVIEW
     document.getElementById("overview").textContent = era.description;
+    const timeline = document.getElementById("timeline-events");
+
+timeline.innerHTML = "";
+
+(era.timeline || []).forEach(event => {
+
+    timeline.innerHTML += `
+
+    <div class="timeline-item">
+
+        <h4>${event.title}</h4>
+
+        <p>${event.description}</p>
+
+    </div>
+
+    `;
+
+});
 
     // SONGS
     const songs = document.getElementById("songs");

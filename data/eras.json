@@ -10,6 +10,20 @@
       "First national television appearance",
       "Introduced to millions of Filipino viewers"
     ],
+    "timeline": [
+      {
+        "title": "Entered PBB Otso",
+        "description": "Sheena officially entered the Pinoy Big Brother house and introduced herself to the nation."
+      },
+      {
+        "title": "Weekly Challenges",
+        "description": "Participated in house tasks that showcased her determination and cheerful personality."
+      },
+      {
+        "title": "Entertainment Journey Begins",
+        "description": "Her television exposure became the stepping stone toward becoming an idol."
+      }
+    ],
     "gallery": [
       "../images/eras/pbb.jpg"
     ]
@@ -25,6 +39,20 @@
     "achievements": [
       "Completed idol training",
       "Became one of the final eight trainees"
+    ],
+    "timeline": [
+      {
+        "title": "Joined Star Hunt Academy",
+        "description": "Began intensive idol training under ABS-CBN's Star Hunt Academy."
+      },
+      {
+        "title": "Developed Her Skills",
+        "description": "Spent months improving her vocals, dance, stage presence and teamwork."
+      },
+      {
+        "title": "Chosen as BINI Member",
+        "description": "Graduated as one of the final eight trainees who would debut as BINI."
+      }
     ],
     "gallery": [
       "../images/eras/sha.jpg"
@@ -43,6 +71,20 @@
     "achievements": [
       "Official pre-debut release",
       "Introduced BINI to the public"
+    ],
+    "timeline": [
+      {
+        "title": "Pre-debut Reveal",
+        "description": "BINI was officially introduced to the public."
+      },
+      {
+        "title": "Released Da Coconut Nut",
+        "description": "The remake became the group's first official release."
+      },
+      {
+        "title": "Preparing for Debut",
+        "description": "The members continued training while promoting the pre-debut single."
+      }
     ],
     "gallery": [
       "../images/eras/dcn.jpg"
@@ -63,6 +105,20 @@
       "Official debut",
       "Released first studio album"
     ],
+    "timeline": [
+      {
+        "title": "Official Debut",
+        "description": "Released Born To Win on June 4, 2021."
+      },
+      {
+        "title": "First Album",
+        "description": "Released the Born To Win album featuring multiple tracks."
+      },
+      {
+        "title": "Growing Fanbase",
+        "description": "Started building a dedicated Bloom fandom."
+      }
+    ],
     "gallery": [
       "../images/eras/borntowin.jpg"
     ]
@@ -81,6 +137,20 @@
     "achievements": [
       "Released second album",
       "Expanded fanbase"
+    ],
+    "timeline": [
+      {
+        "title": "Feel Good Album",
+        "description": "Released their sophomore album."
+      },
+      {
+        "title": "Lagi Became a Favorite",
+        "description": "Lagi quickly became one of BINI's most loved songs."
+      },
+      {
+        "title": "More Live Performances",
+        "description": "The group appeared in more festivals, TV shows and concerts."
+      }
     ],
     "gallery": [
       "../images/eras/feelgood.jpg"
@@ -104,6 +174,24 @@
       "Massive TikTok success",
       "Mainstream popularity"
     ],
+    "timeline": [
+      {
+        "title": "Karera Released",
+        "description": "The inspirational single became a fan favorite."
+      },
+      {
+        "title": "Pantropiko Went Viral",
+        "description": "Pantropiko dominated TikTok and became a nationwide summer anthem."
+      },
+      {
+        "title": "Talaarawan EP",
+        "description": "Released Salamin, Salamin and reached new career heights."
+      },
+      {
+        "title": "Cherry On Top",
+        "description": "Continued the group's international momentum."
+      }
+    ],
     "gallery": [
       "../images/eras/pantropiko.jpg"
     ]
@@ -121,6 +209,20 @@
       "Expanded global fanbase",
       "Prepared for Coachella"
     ],
+    "timeline": [
+      {
+        "title": "World Tour Begins",
+        "description": "Performed in multiple international cities."
+      },
+      {
+        "title": "Sold-Out Shows",
+        "description": "Connected with Blooms around the world."
+      },
+      {
+        "title": "Global Recognition",
+        "description": "Prepared the group for even larger international festivals."
+      }
+    ],
     "gallery": [
       "../images/eras/biniverse.jpg"
     ]
@@ -137,6 +239,28 @@
       "First Filipino act at Coachella",
       "Historic international performance"
     ],
+    "timeline": [
+      {
+        "title": "Coachella Announcement",
+        "description": "The world learned BINI would perform at Coachella."
+      },
+      {
+        "title": "Historic Performance",
+        "description": "BINI became the first Filipino act to perform at the festival."
+      },
+      {
+        "title": "Billboard: Global Force Award",
+        "description": "Recognized for their global impact and influence."
+      },
+      {
+        "title": "Grammy Museum: Global Spin Live",
+        "description": "The Nation's Girl Group BINI continued to introduce themselves to the world with a special guest appearance at the Grammy Museum"
+      },
+      {
+        "title": "Worldwide Recognition",
+        "description": "Media around the world highlighted the group's historic achievement."
+      }
+    ],
     "gallery": [
       "../images/eras/coachella.jpg"
     ]
@@ -149,12 +273,26 @@
     "hero": "../images/eras/signals.jpg",
     "description": "The Signals era represents BINI's continued global expansion through their third album, Summer Sonic, and worldwide promotions.",
     "songs": [
-      "Blink Twice"
+      "Blush"
     ],
     "achievements": [
-      "Released third album",
+      "Released 4th EP",
       "Performed at Summer Sonic Japan",
       "Continued global promotions"
+    ],
+    "timeline": [
+      {
+        "title": "Signals Album",
+        "description": "Released BINI's third full-length album."
+      },
+      {
+        "title": "Summer Sonic Japan",
+        "description": "Performed at one of Asia's biggest music festivals."
+      },
+      {
+        "title": "Global Promotions",
+        "description": "Continued expanding BINI's presence worldwide."
+      }
     ],
     "gallery": [
       "../images/eras/signals.jpg"

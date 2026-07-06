@@ -241,3 +241,70 @@ body{
 }
 
 }
+
+/* ===========================
+   ERA TIMELINE
+=========================== */
+
+.era-timeline{
+    position:relative;
+    margin-top:20px;
+    padding-left:35px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:35px;
+    padding-left:25px;
+}
+
+.timeline-item::before{
+
+    content:"";
+    position:absolute;
+    left:-16px;
+    top:8px;
+
+    width:14px;
+    height:14px;
+
+    border-radius:50%;
+    background:#b57cff;
+
+    box-shadow:0 0 15px #b57cff;
+
+}
+
+.timeline-item::after{
+
+    content:"";
+    position:absolute;
+    left:-10px;
+    top:22px;
+
+    width:2px;
+    height:calc(100% + 18px);
+
+    background:#5b2b94;
+
+}
+
+.timeline-item:last-child::after{
+    display:none;
+}
+
+.timeline-item h4{
+
+    margin:0 0 8px;
+
+    color:#c084fc;
+
+}
+
+.timeline-item p{
+
+    margin:0;
+
+    color:#ddd;
+
+}
