@@ -103,7 +103,12 @@ function displayArticles(filter) {
         card.className = "article-card";
 
         card.innerHTML = `
-            <img src="${article.image}" alt="${article.title}" class="article-image">
+            <img 
+                src="${article.image}" 
+                alt="${article.title}" 
+                class="article-image"
+                onerror="this.onerror=null; this.src='../images/articles/article-placeholder.jpeg'"
+>
 
             <div class="article-content">
                 <span class="article-source">${article.source}</span>
