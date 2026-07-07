@@ -30,15 +30,15 @@ window.addEventListener("scroll", () => {
 
 });
 
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-links");
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
 menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
+    navLinks.classList.toggle("active");
 });
 
-navMenu.querySelectorAll("a").forEach(link => {
+navLinks.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-        navMenu.classList.remove("show");
+        navLinks.classList.remove("active");
     });
 });
