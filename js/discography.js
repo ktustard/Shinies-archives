@@ -1,4 +1,4 @@
-async function loadDiscography(){
+async function loadDiscography() {
 
     const response = await fetch("data/discography.json");
 
@@ -6,13 +6,30 @@ async function loadDiscography(){
 
     const container = document.getElementById("album-grid");
 
-    albums.forEach(album=>{
+    container.innerHTML = "";
+
+    albums.forEach(album => {
 
         container.innerHTML += `
 
-        <div class="album-card">
+        <a
+            href="${album.spotify || "#"}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="album-card"
+        >
 
-            <img src="${album.cover}" alt="${album.title}">
+            <div class="album-image">
+
+                <img src="${album.cover}" alt="${album.title}">
+
+                <div class="spotify-overlay">
+
+                    <span>▶ Listen on Spotify</span>
+
+                </div>
+
+            </div>
 
             <div class="album-info">
 
@@ -24,7 +41,7 @@ async function loadDiscography(){
 
             </div>
 
-        </div>
+        </a>
 
         `;
 

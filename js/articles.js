@@ -2,6 +2,8 @@ const articlesGrid = document.getElementById("articles-grid");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const yearFilter = document.getElementById("yearFilter");
 const sortOrder = document.getElementById("sortOrder");
+const searchInput = document.getElementById("searchInput");
+const articleCount = document.getElementById("articleCount");
 
 let articles = [];
 let currentCategory = "all";
@@ -14,12 +16,21 @@ async function loadArticles() {
 
 function getArticleYear(article) {
     const year = article.year || article.date || "";
-
     const match = String(year).match(/\d{4}/);
+    return match ? match[0] : "Unknown";
+}
 
-    if (match) return match[0];
+function matchesSearch(article, searchTerm) {
+    const text = `
+        ${article.title || ""}
+        ${article.source || ""}
+        ${article.category || ""}
+        ${article.event || ""}
+        ${article.description || ""}
+        ${article.url || ""}
+    `.toLowerCase();
 
-    return "Unknown";
+    return text.includes(searchTerm.toLowerCase());
 }
 
 function displayArticles() {
@@ -27,24 +38,30 @@ function displayArticles() {
 
     let filtered = [...articles];
 
+    const searchTerm = searchInput.value.trim();
+
     if (currentCategory !== "all") {
         filtered = filtered.filter(article => article.category === currentCategory);
     }
 
-    if (yearFilter && yearFilter.value !== "all") {
+    if (yearFilter.value !== "all") {
         filtered = filtered.filter(article => getArticleYear(article) === yearFilter.value);
+    }
+
+    if (searchTerm !== "") {
+        filtered = filtered.filter(article => matchesSearch(article, searchTerm));
     }
 
     filtered.sort((a, b) => {
         const yearA = getArticleYear(a) === "Unknown" ? 0 : Number(getArticleYear(a));
         const yearB = getArticleYear(b) === "Unknown" ? 0 : Number(getArticleYear(b));
 
-        if (sortOrder && sortOrder.value === "oldest") {
-            return yearA - yearB;
-        }
-
-        return yearB - yearA;
+        return sortOrder.value === "oldest"
+            ? yearA - yearB
+            : yearB - yearA;
     });
+
+    articleCount.textContent = `${filtered.length} article${filtered.length === 1 ? "" : "s"} found`;
 
     filtered.forEach(article => {
         const card = document.createElement("article");
@@ -87,12 +104,8 @@ filterButtons.forEach(button => {
     });
 });
 
-if (yearFilter) {
-    yearFilter.addEventListener("change", displayArticles);
-}
-
-if (sortOrder) {
-    sortOrder.addEventListener("change", displayArticles);
-}
+yearFilter.addEventListener("change", displayArticles);
+sortOrder.addEventListener("change", displayArticles);
+searchInput.addEventListener("input", displayArticles);
 
 loadArticles();

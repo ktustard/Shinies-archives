@@ -17,7 +17,7 @@
 
 <main class="articles-page">
 
-<a href="../index.html#home" class="back-link">← Back to Home</a>
+<a href="../index.html#hero" class="back-link">← Back to Home</a>
 
 <section class="articles-hero">
     <p>Media Museum</p>
@@ -25,38 +25,55 @@
     <span>Articles, interviews, photos, global coverage, and press features.</span>
 </section>
 
-<section class="article-tabs">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="News">News</button>
-    <button class="filter-btn" data-filter="Interview">Interview</button>
-    <button class="filter-btn" data-filter="Photos">Photos</button>
-    <button class="filter-btn" data-filter="Fashion">Fashion</button>
-    <button class="filter-btn" data-filter="Others">Others</button>
+<section class="article-controls">
 
-    <select id="yearFilter" class="year-filter">
-        <option value="all">All Years</option>
-        <option value="2026">2026</option>
-        <option value="2025">2025</option>
-        <option value="2024">2024</option>
-        <option value="2023">2023</option>
-        <option value="2022">2022</option>
-        <option value="2021">2021</option>
-        <option value="2020">2020</option>
-        <option value="2019">2019</option>
-        <option value="2018">2018</option>
-    </select>
+    <input 
+        type="text" 
+        id="searchInput" 
+        class="search-input" 
+        placeholder="Search articles, sources, events..."
+    >
 
-    <select id="sortOrder" class="year-filter">
-        <option value="newest">Newest First</option>
-        <option value="oldest">Oldest First</option>
-    </select>
+    <div class="article-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="News">News</button>
+        <button class="filter-btn" data-filter="Interview">Interview</button>
+        <button class="filter-btn" data-filter="Photos">Photos</button>
+        <button class="filter-btn" data-filter="Fashion">Fashion</button>
+        <button class="filter-btn" data-filter="Video">Video</button>
+        <button class="filter-btn" data-filter="Others">Others</button>
+
+        <select id="yearFilter" class="year-filter">
+            <option value="all">All Years</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+        </select>
+
+        <select id="sortOrder" class="year-filter">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+        </select>
+    </div>
+
 </section>
 
 <section class="articles-section">
+
     <p class="section-subtitle">Global Coverage</p>
-    <h2 class="section-title">BINI Coachella Media Archive</h2>
+
+    <h2 class="section-title">BINI Media Coverage</h2>
+
+    <p id="articleCount" class="article-count"></p>
 
     <div id="articles-grid" class="articles-grid"></div>
+
 </section>
 
 </main>

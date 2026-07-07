@@ -1,44 +1,51 @@
 [
-    {
-        "title":"Da Coconut Nut",
-        "year":"2020",
-        "type":"Pre-Debut Single",
-        "cover":"images/discography/dacoconutnut.jpg"
-    },
-    {
-        "title":"Born To Win",
-        "year":"2021",
-        "type":"Studio Album",
-        "cover":"images/discography/borntowin.jpg"
-    },
-    {
-        "title":"Feel Good",
-        "year":"2022",
-        "type":"Studio Album",
-        "cover":"images/discography/feelgood.jpg"
-    },
-    {
-        "title":"Talaarawan",
-        "year":"2024",
-        "type":"EP",
-        "cover":"images/discography/talaarawan.jpg"
-    },
-    {
-        "title":"BINIverse",
-        "year":"2025",
-        "type":"EP",
-        "cover":"images/discography/biniverse.jpg"
-    },
-    {
-        "title":"FLAMES",
-        "year":"2025",
-        "type":"Studio Album",
-        "cover":"images/discography/flames.jpg"
-    },
-    {
-        "title":"SIGNALS",
-        "year":"2026",
-        "type":"Studio Album",
-        "cover":"images/discography/signals.jpg"
-    }
+  {
+    "title": "Da Coconut Nut",
+    "year": "2020",
+    "type": "Pre-Debut Single",
+    "cover": "images/discography/dacoconutnut.jpg",
+    "spotify": "https://open.spotify.com/track/0oSyeQT1PrwyPreTBq2dDN?si=391524c6225544d8"
+  },
+  {
+    "title": "Born To Win",
+    "year": "2021",
+    "type": "Studio Album",
+    "cover": "images/discography/borntowin.jpg",
+    "spotify": "https://open.spotify.com/album/28rgW6IXDsrk4YtTcFtGGK?si=SpRZukqMQle_esE2Tyodlw"
+  },
+  {
+    "title": "Feel Good",
+    "year": "2022",
+    "type": "Studio Album",
+    "cover": "images/discography/feelgood.jpg",
+    "spotify": "https://open.spotify.com/album/7H64wogfyQUcRqFZFbMV9S?si=foZtz8wOR9KWeFaCxl4Q6g"
+  },
+  {
+    "title": "Talaarawan",
+    "year": "2024",
+    "type": "EP",
+    "cover": "images/discography/talaarawan.jpg",
+    "spotify": "https://open.spotify.com/album/2eT1XApzS0GmkJLMlCBdVv?si=puR9Rp39TBuDYzLfcRHYaA"
+  },
+  {
+    "title": "BINIverse",
+    "year": "2025",
+    "type": "EP",
+    "cover": "images/discography/biniverse.jpg",
+    "spotify": "https://open.spotify.com/album/0N41GI4E4w6irltx8mJhY5?si=yJebPCM0QbyKVYwe13k4kw"
+  },
+  {
+    "title": "FLAMES",
+    "year": "2025",
+    "type": "Studio Album",
+    "cover": "images/discography/flames.jpg",
+    "spotify": "https://open.spotify.com/album/42s2X3WQppxdHafUT2dfmF?si=VIrVMjZZRFisJi3eto-a1g"
+  },
+  {
+    "title": "SIGNALS",
+    "year": "2026",
+    "type": "EP",
+    "cover": "images/discography/signals.jpg",
+    "spotify": "https://open.spotify.com/album/7EKQ3Mw77tsyP4Ymaa5hlM?si=DOIj5WY6RQ-dzUcT9VnKmA"
+  }
 ]
