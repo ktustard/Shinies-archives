@@ -3,228 +3,86 @@
 ========================================== */
 
 header{
-
     position:fixed;
     top:0;
     left:0;
-
     width:100%;
-
     z-index:1000;
-
     background:rgba(12,8,22,.82);
-
     backdrop-filter:blur(18px);
-
     border-bottom:1px solid rgba(255,255,255,.06);
-
 }
 
 .navbar{
-
     width:min(1200px,92%);
     height:82px;
-
     margin:auto;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
 }
 
-/* ==========================================
-   LOGO
-========================================== */
+/* LOGO */
 
 .logo{
-
     display:flex;
     align-items:center;
     gap:12px;
-
     font-family:'Space Grotesk',sans-serif;
     font-size:1.7rem;
     font-weight:700;
-
     color:#ffffff;
-
     white-space:nowrap;
-
 }
 
-/* ==========================================
-   NAVIGATION LINKS
-========================================== */
+/* LINKS */
 
 .nav-links{
-
     display:flex;
     align-items:center;
     gap:48px;
-
     list-style:none;
-
 }
 
 .nav-links li{
-
     list-style:none;
-
 }
 
 .nav-links a{
-
     position:relative;
-
     display:inline-block;
-
     padding:10px 0;
-
     color:#f2f2f2;
-
     font-size:1rem;
     font-weight:600;
-
     text-decoration:none;
-
     transition:.3s;
-
 }
-
-/* Underline */
 
 .nav-links a::after{
-
     content:"";
-
     position:absolute;
-
     left:50%;
     bottom:-4px;
-
     width:0;
     height:3px;
-
     background:#b57cff;
-
     border-radius:50px;
-
     transform:translateX(-50%);
-
     transition:.3s ease;
-
 }
 
-/* Hover */
-
-.nav-links a:hover{
-
-    color:#c084fc;
-
-}
-
-.nav-links a:hover::after{
-
-    width:100%;
-
-}
-
-/* Active */
-
+.nav-links a:hover,
 .nav-links a.active{
-
     color:#c084fc;
-
 }
 
+.nav-links a:hover::after,
 .nav-links a.active::after{
-
     width:100%;
-
 }
 
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media (max-width:900px){
-
-    .navbar{
-
-        width:94%;
-
-        height:72px;
-
-    }
-
-    .logo{
-
-        font-size:1.35rem;
-
-    }
-
-    .nav-links{
-
-        gap:22px;
-
-    }
-
-    .nav-links a{
-
-        font-size:.95rem;
-
-    }
-
-}
-
-@media (max-width:768px){
-
-    .navbar{
-
-        justify-content:center;
-
-    }
-
-    .logo{
-
-        display:none;
-
-    }
-
-    .nav-links{
-
-        gap:18px;
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-    }
-
-    .nav-links a{
-
-        font-size:.9rem;
-
-    }
-
-}
-
-@media (max-width:500px){
-
-    .nav-links{
-
-        gap:14px;
-
-    }
-
-    .nav-links a{
-
-        font-size:.82rem;
-
-    }
-
-}
+/* HAMBURGER - HIDDEN ON DESKTOP */
 
 .menu-toggle{
     display:none;
@@ -235,14 +93,17 @@ header{
     cursor:pointer;
 }
 
+/* MOBILE ONLY */
+
 @media(max-width:768px){
 
     .navbar{
+        width:94%;
         height:76px;
+        justify-content:space-between;
     }
 
     .logo{
-        display:flex;
         font-size:1.2rem;
     }
 
@@ -254,7 +115,6 @@ header{
         position:absolute;
         top:76px;
         left:0;
-
         width:100%;
 
         display:none;
@@ -263,10 +123,8 @@ header{
         gap:24px;
 
         padding:35px 0;
-
         background:rgba(12,8,22,.96);
         backdrop-filter:blur(18px);
-
         border-bottom:1px solid rgba(255,255,255,.08);
     }
 
@@ -274,4 +132,7 @@ header{
         display:flex;
     }
 
+    .nav-links a{
+        font-size:1rem;
+    }
 }
