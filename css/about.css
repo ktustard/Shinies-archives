@@ -6,7 +6,8 @@
 
     width:min(1200px,100%);
     margin:auto;
-    padding:140px 0;
+    position:relative;
+    padding:120px 0;
 
 }
 
@@ -19,6 +20,11 @@
     font-size:3rem;
 
     color:var(--white);
+
+    margin-bottom:25px;
+    font-size:clamp(2.8rem,5vw,4.5rem);
+
+    letter-spacing:-2px;
 
     margin-bottom:25px;
 
