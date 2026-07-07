@@ -29,3 +29,16 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+});
+
+navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+    });
+});
