@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    background:#12091d;
+    color:white;
+    font-family:Poppins,sans-serif;
+}
+
+.performance-page{
+    width:min(1150px,92%);
+    margin:60px auto 100px;
+}
+
+.back-link{
+    display:inline-block;
+    color:#b57cff;
+    text-decoration:none;
+    font-weight:600;
+    margin-bottom:50px;
+}
+
+.performance-hero{
+    padding:90px 0;
+}
+
+.performance-hero p{
+    color:#b57cff;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-weight:600;
+}
+
+.performance-hero h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:5rem;
+    margin:15px 0;
+}
+
+.performance-hero span{
+    color:#d7d7d7;
+    font-size:1.1rem;
+}
+
+.performance-tabs{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:80px;
+}
+
+.filter-btn{
+    color:white;
+    padding:14px 24px;
+    border-radius:999px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    cursor:pointer;
+    font-family:Poppins,sans-serif;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    border-color:#b57cff;
+    color:#c084fc;
+}
+
+.performance-section{
+    margin-bottom:120px;
+}
+
+.performance-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.performance-card{
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    padding:30px;
+    transition:.35s;
+}
+
+.performance-card:hover{
+    transform:translateY(-8px);
+    border-color:#b57cff;
+    background:rgba(181,124,255,.08);
+}
+
+.performance-card span{
+    color:#b57cff;
+    font-size:.85rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+.performance-card h3{
+    margin:16px 0 8px;
+    font-size:1.6rem;
+}
+
+.performance-card strong{
+    color:#fff;
+    display:block;
+    margin-bottom:14px;
+}
+
+.performance-card p{
+    color:#d7d7d7;
+    line-height:1.8;
+}
+
+@media(max-width:700px){
+    .performance-hero h1{
+        font-size:3.2rem;
+    }
+}

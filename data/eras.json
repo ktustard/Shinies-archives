@@ -246,7 +246,7 @@
       },
       {
         "title": "Historic Performance",
-        "description": "BINI became the first Filipino act to perform at the festival."
+        "description": "As BINI made history as the first Filipino act to perform at the festival, Sheena stood out with her powerful stage presence and exceptional dancing, earning praise and attracting new fans from around the world."
       },
       {
         "title": "Billboard: Global Force Award",
@@ -255,6 +255,10 @@
       {
         "title": "Grammy Museum: Global Spin Live",
         "description": "The Nation's Girl Group BINI continued to introduce themselves to the world with a special guest appearance at the Grammy Museum"
+      },
+      {
+        "title": "Summer Sonic Japan Announcement",
+        "description": "BINI will perform on the Mountain Stage at Summer Sonic 2026 on August 14 in Osaka and August 16 in Tokyo."
       },
       {
         "title": "Worldwide Recognition",
@@ -282,13 +286,22 @@
     ],
     "achievements": [
       "Released 4th EP",
+      "Signals World Tour",
       "Performed at Summer Sonic Japan",
       "Continued global promotions"
     ],
     "timeline": [
+          {
+        "title": "Unang Kilig Released",
+        "description": "Sheena choreographed the chorus of Unang Kilig"
+      },
       {
         "title": "Signals Album",
         "description": "Released BINI's third full-length album."
+      },
+      {
+        "title": "Signals World Tour",
+        "description": "Embarked on a world tour to promote the Signals album."
       },
       {
         "title": "Summer Sonic Japan",

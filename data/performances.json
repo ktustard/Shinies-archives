@@ -1,0 +1,51 @@
+[
+  {
+    "category": "International",
+    "type": "Festival",
+    "title": "Coachella",
+    "year": "2026",
+    "description": "Historic international festival milestone for BINI and P-pop."
+  },
+  {
+    "category": "International",
+    "type": "Festival",
+    "title": "Summer Sonic Japan",
+    "year": "2026",
+    "description": "A major Japanese music festival stage during the Signals era."
+  },
+  {
+    "category": "Philippines",
+    "type": "Festival",
+    "title": "Aurora Music Festival",
+    "year": "TBA",
+    "description": "A major local music festival appearance in the Philippines."
+  },
+  {
+    "category": "Philippines",
+    "type": "P-pop Event",
+    "title": "PPOP CON",
+    "year": "TBA",
+    "description": "A major local P-pop event and performance stage."
+  },
+  {
+    "category": "World Tour",
+    "type": "Tour",
+    "title": "BINIverse World Tour",
+    "year": "2024–2025",
+    "description": "BINI's first major international tour, bringing their music to global audiences."
+  },
+  {
+    "category": "World Tour",
+    "type": "Tour",
+    "title": "Signals World Tour",
+    "year": "2026",
+    "description": "The global tour era connected to Signals, Summer Sonic, and international promotions."
+  },
+  {
+    "category": "World Tour",
+    "type": "Tour",
+    "title": "Next World Tour",
+    "year": "Future",
+    "description": "Placeholder for future touring milestones."
+  }
+]
