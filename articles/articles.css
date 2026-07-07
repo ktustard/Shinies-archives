@@ -60,10 +60,17 @@
 }
 
 .article-card{
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
     background:rgba(255,255,255,.05);
-    border:1px solid var(--border);
+
+    border:1px solid rgba(255,255,255,.08);
+
     border-radius:22px;
-    padding:25px;
+
     transition:.3s;
 }
 
@@ -94,4 +101,30 @@
     display:inline-block;
     margin-top:20px;
     color:var(--primary-light);
+}
+
+.article-image{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.article-content{
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    flex:1;
+
 }

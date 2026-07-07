@@ -4,24 +4,48 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 let articles = [];
 
 async function loadArticles() {
-    const response = await fetch("../data/articles.json");
-    const links = await response.json();
+    try {
+        const response = await fetch("../data/articles.json");
 
-    articles = links.map(url => {
-        const link = new URL(url);
-        const source = getSourceName(link.hostname);
-        const title = getTitleFromUrl(link);
-        const category = getCategory(url);
+        if (!response.ok) {
+            throw new Error("Could not load articles.json");
+        }
 
-        return {
-            title,
-            source,
-            category,
-            url
-        };
-    });
+        const data = await response.json();
 
-    displayArticles("all");
+        articles = data.map(item => {
+            if (typeof item === "string") {
+                const link = new URL(item);
+
+                return {
+                    title: getTitleFromUrl(link),
+                    source: getSourceName(link.hostname),
+                    category: getCategory(item),
+                    image: "../images/articles/article-placeholder.jpg",
+                    url: item
+                };
+            }
+
+            return {
+                title: item.title || "Untitled Article",
+                source: item.source || "Unknown Source",
+                category: item.category || "Others",
+                image: item.image || "../images/articles/article-placeholder.jpg",
+                url: item.url
+            };
+        });
+
+        displayArticles("all");
+
+    } catch (error) {
+        console.error(error);
+
+        articlesGrid.innerHTML = `
+            <p style="color:white;">
+                Failed to load articles. Check articles.json and articles.js.
+            </p>
+        `;
+    }
 }
 
 function getSourceName(hostname) {
@@ -41,12 +65,11 @@ function getSourceName(hostname) {
 }
 
 function getTitleFromUrl(link) {
-    let path = link.pathname.split("/").filter(Boolean);
-    let slug = path[path.length - 1] || link.hostname;
+    const path = link.pathname.split("/").filter(Boolean);
+    const slug = path[path.length - 1] || link.hostname;
 
-    if (slug.includes("search")) {
-        return "BINI Coachella Editorial Images";
-    }
+    if (link.hostname.includes("t.co")) return "External Link";
+    if (link.hostname.includes("instagram")) return "Instagram Post";
 
     return slug
         .replaceAll("-", " ")
@@ -59,47 +82,11 @@ function getTitleFromUrl(link) {
 function getCategory(url) {
     const lowerUrl = url.toLowerCase();
 
-    if (
-        lowerUrl.includes("video") ||
-        lowerUrl.includes("youtube") ||
-        lowerUrl.includes("shorttakes")
-    ) {
-        return "Video";
-    }
-
-    if (
-        lowerUrl.includes("photo") ||
-        lowerUrl.includes("getty") ||
-        lowerUrl.includes("slideshow") ||
-        lowerUrl.includes("foto")
-    ) {
-        return "Photos";
-    }
-
-    if (
-        lowerUrl.includes("vogue") ||
-        lowerUrl.includes("elle") ||
-        lowerUrl.includes("beauty") ||
-        lowerUrl.includes("fashion") ||
-        lowerUrl.includes("outfits")
-    ) {
-        return "Fashion";
-    }
-
-    if (
-        lowerUrl.includes("interview") ||
-        lowerUrl.includes("talks")
-    ) {
-        return "Interview";
-    }
-
-    if (
-        lowerUrl.includes("instagram") ||
-        lowerUrl.includes("x.com") ||
-        lowerUrl.includes("t.co")
-    ) {
-    return "Others";
-}
+    if (lowerUrl.includes("instagram") || lowerUrl.includes("x.com") || lowerUrl.includes("t.co")) return "Others";
+    if (lowerUrl.includes("video") || lowerUrl.includes("shorttakes")) return "Video";
+    if (lowerUrl.includes("photo") || lowerUrl.includes("getty") || lowerUrl.includes("slideshow") || lowerUrl.includes("foto")) return "Photos";
+    if (lowerUrl.includes("vogue") || lowerUrl.includes("elle") || lowerUrl.includes("fashion") || lowerUrl.includes("beauty") || lowerUrl.includes("outfits")) return "Fashion";
+    if (lowerUrl.includes("interview") || lowerUrl.includes("talks")) return "Interview";
 
     return "News";
 }
@@ -116,15 +103,17 @@ function displayArticles(filter) {
         card.className = "article-card";
 
         card.innerHTML = `
-            <span class="article-source">${article.source}</span>
+            <img src="${article.image}" alt="${article.title}" class="article-image">
 
-            <h3>${article.title}</h3>
+            <div class="article-content">
+                <span class="article-source">${article.source}</span>
+                <h3>${article.title}</h3>
+                <p class="article-meta">${article.category}</p>
 
-            <p class="article-meta">${article.category}</p>
-
-            <a href="${article.url}" target="_blank" rel="noopener noreferrer">
-                Read →
-            </a>
+                <a href="${article.url}" target="_blank" rel="noopener noreferrer">
+                    Read →
+                </a>
+            </div>
         `;
 
         articlesGrid.appendChild(card);
