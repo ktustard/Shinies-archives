@@ -13,13 +13,11 @@ async function loadArticles() {
 }
 
 function getArticleYear(article) {
-    if (article.date) {
-        return String(article.date).slice(0, 4);
-    }
+    const year = article.year || article.date || "";
 
-    if (article.year) {
-        return String(article.year);
-    }
+    const match = String(year).match(/\d{4}/);
+
+    if (match) return match[0];
 
     return "Unknown";
 }
@@ -33,17 +31,19 @@ function displayArticles() {
         filtered = filtered.filter(article => article.category === currentCategory);
     }
 
-    if (yearFilter.value !== "all") {
+    if (yearFilter && yearFilter.value !== "all") {
         filtered = filtered.filter(article => getArticleYear(article) === yearFilter.value);
     }
 
     filtered.sort((a, b) => {
-        const yearA = parseInt(getArticleYear(a)) || 0;
-        const yearB = parseInt(getArticleYear(b)) || 0;
+        const yearA = getArticleYear(a) === "Unknown" ? 0 : Number(getArticleYear(a));
+        const yearB = getArticleYear(b) === "Unknown" ? 0 : Number(getArticleYear(b));
 
-        return sortOrder.value === "newest"
-            ? yearB - yearA
-            : yearA - yearB;
+        if (sortOrder && sortOrder.value === "oldest") {
+            return yearA - yearB;
+        }
+
+        return yearB - yearA;
     });
 
     filtered.forEach(article => {
@@ -52,15 +52,17 @@ function displayArticles() {
 
         card.innerHTML = `
             <img
-                src="${article.image || "../images/articles/article-placeholder.jpeg"}"
+                src="${article.image || "../images/articles/article-placeholder.jpg"}"
                 alt="${article.title || "Article image"}"
                 class="article-image"
-                onerror="this.onerror=null; this.src='../images/articles/article-placeholder.jpeg'"
+                onerror="this.onerror=null; this.src='../images/articles/article-placeholder.jpeg';"
             >
 
             <div class="article-content">
                 <span class="article-source">${article.source || "Unknown Source"}</span>
+
                 <h3>${article.title || "Untitled Article"}</h3>
+
                 <p class="article-meta">
                     ${article.category || "Others"} • ${getArticleYear(article)}
                 </p>
@@ -85,7 +87,12 @@ filterButtons.forEach(button => {
     });
 });
 
-yearFilter.addEventListener("change", displayArticles);
-sortOrder.addEventListener("change", displayArticles);
+if (yearFilter) {
+    yearFilter.addEventListener("change", displayArticles);
+}
+
+if (sortOrder) {
+    sortOrder.addEventListener("change", displayArticles);
+}
 
 loadArticles();
