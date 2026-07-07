@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/eras.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/achievements.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -460,6 +461,34 @@
 </section>
 <section id="achievements" class="achievements">
 
+    <p class="section-subtitle reveal">
+        Milestones
+    </p>
+
+    <h2 class="section-title reveal delay-1">
+        Achievements
+    </h2>
+
+    <div class="achievement-tabs">
+        <button class="achievement-filter active" data-filter="all">All</button>
+        <button class="achievement-filter" data-filter="BINI">BINI</button>
+        <button class="achievement-filter" data-filter="Sheena">Sheena</button>
+
+        <select id="achievementYearFilter" class="achievement-year-filter">
+            <option value="all">All Years</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+        </select>
+    </div>
+
+    <div id="achievement-grid" class="achievement-grid"></div>
+
+    <div id="achievement-counter" class="achievement-counter"></div>
+
 </section>
 <section id="articles" class="articles">
 
@@ -474,6 +503,7 @@
 <script src="js/discography.js"></script>
 <script src="js/animations.js"></script>
 <script src="js/hero.js"></script>
+<script src="js/achievements.js"></script>
 
 </body>
 </html>

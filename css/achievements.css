@@ -1,8 +1,317 @@
-.achievements
-{
+.achievements{
+
+    width:min(1200px,90%);
+    margin:auto;
+    padding:120px 0;
+
+}
+
+.achievement-tabs{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin:60px 0;
+
+}
+
+/* ===========================
+   FILTER BUTTONS
+=========================== */
+
+.achievement-filter,
+.achievement-year-filter{
+
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:56px;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+    font-size:1rem;
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+/* Hover */
+
+.achievement-filter:hover,
+.achievement-year-filter:hover{
+    border-color:#b57cff;
+    color:#c084fc;
+    background:rgba(255,255,255,.08);
+
+    border-color:var(--primary);
+
+    color:var(--primary-light);
+
+}
+
+/* Active */
+
+.achievement-filter.active{
+    background:rgba(255,255,255,.05);
+
+    color:var(--primary-light);
+
+    border-color:var(--primary);
+    border-color:#b57cff;
+    color:#c084fc;
+}
+
+.achievement-filter.active:hover{
+    color:var(--primary-light);
+}
+
+/* ===========================
+   YEAR DROPDOWN
+=========================== */
+
+.achievement-year-filter{
+
+    min-width:165px;
+
+    justify-content:flex-start;
+
+    padding-right:48px;
+
+    background:
+        rgba(255,255,255,.05)
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E")
+        no-repeat right 18px center;
+
+}
+
+.achievement-year-filter:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 20px rgba(170,120,255,.25);
+
+}
+
+.achievement-year-filter option{
+
+    color:#111;
+
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.achievement-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+
+    gap:28px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.achievement-card{
 
     position:relative;
 
-    padding:120px 0;
+    overflow:hidden;
+
+    isolation:isolate;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:all .35s ease;
+
+}
+
+.achievement-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-40%;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(170,120,255,.30) 0%,
+
+        rgba(170,120,255,.12) 40%,
+
+        transparent 75%
+
+    );
+
+    opacity:0;
+
+    transform:scale(.8);
+
+    transition:.45s;
+
+    z-index:-1;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 18px 45px rgba(120,70,210,.28);
+
+}
+
+.achievement-card:hover::before{
+
+    opacity:1;
+
+    transform:scale(1.2);
+
+}
+
+.achievement-card span{
+
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:var(--primary-light);
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+.achievement-card h3{
+
+    margin-bottom:12px;
+
+    color:white;
+
+    font-size:1.4rem;
+
+    line-height:1.35;
+
+}
+
+.achievement-meta{
+
+    margin-bottom:16px;
+
+    color:rgba(255,255,255,.65);
+
+    font-size:.92rem;
+
+}
+
+.achievement-card p{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   COUNTER
+=========================== */
+
+.achievement-counter{
+
+    margin-top:55px;
+
+    text-align:center;
+
+    color:var(--primary-light);
+
+    font-size:.95rem;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .achievement-tabs{
+
+        justify-content:flex-start;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        gap:14px;
+
+        padding-bottom:10px;
+
+        scrollbar-width:none;
+
+    }
+
+    .achievement-tabs::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .achievement-filter,
+    .achievement-year-filter{
+
+        flex:0 0 auto;
+
+    }
+
+    .achievement-grid{
+
+        grid-template-columns:1fr;
+
+    }
 
 }
