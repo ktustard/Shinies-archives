@@ -3,6 +3,7 @@ let performances = [];
 const grid = document.getElementById("performance-grid");
 const buttons = document.querySelectorAll(".filter-btn");
 const yearFilter = document.getElementById("yearFilter");
+const searchInput = document.getElementById("searchPerformance");
 const counter = document.getElementById("performance-counter");
 
 let currentFilter = "all";
@@ -26,11 +27,23 @@ function displayPerformances() {
         filtered = filtered.filter(item => item.year === yearFilter.value);
     }
 
+    const keyword = searchInput.value.toLowerCase().trim();
+
+    if (keyword) {
+        filtered = filtered.filter(item =>
+            item.title.toLowerCase().includes(keyword) ||
+            item.description.toLowerCase().includes(keyword) ||
+            item.category.toLowerCase().includes(keyword) ||
+            item.type.toLowerCase().includes(keyword) ||
+            item.year.toLowerCase().includes(keyword)
+        );
+    }
+
     filtered.sort((a, b) => {
-        const yearA = parseInt(a.year) || 0;
-        const yearB = parseInt(b.year) || 0;
-        return yearB - yearA;
+        return (parseInt(b.year) || 0) - (parseInt(a.year) || 0);
     });
+
+    counter.textContent = `${filtered.length} Archived Performance${filtered.length !== 1 ? "s" : ""}`;
 
     filtered.forEach(item => {
         const card = document.createElement("article");
@@ -50,9 +63,6 @@ function displayPerformances() {
 
         grid.appendChild(card);
     });
-
-    counter.textContent =
-        `Showing ${filtered.length} of ${performances.length} performances`;
 }
 
 buttons.forEach(button => {
@@ -66,5 +76,6 @@ buttons.forEach(button => {
 });
 
 yearFilter.addEventListener("change", displayPerformances);
+searchInput.addEventListener("input", displayPerformances);
 
 loadPerformances();
