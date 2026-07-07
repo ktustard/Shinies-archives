@@ -23,23 +23,41 @@
 <a href="../index.html#home" class="back-link">← Back to Home</a>
 
 <section class="performance-hero">
-    <p>Performance Museum</p>
+    <p>Performance & Events Museum</p>
     <h1>Performance Archive</h1>
     <span>Festivals, world tours, major events, and unforgettable stages.</span>
 </section>
 
 <section class="performance-tabs">
+
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="International">International</button>
     <button class="filter-btn" data-filter="Philippines">Philippines</button>
-    <button class="filter-btn" data-filter="World Tour">World Tours</button>
+    <button class="filter-btn" data-filter="World Tour">World Tour</button>
+    <button class="filter-btn" data-filter="Others">Others</button>
+
+    <select id="yearFilter" class="year-filter">
+        <option value="all">All Years</option>
+        <option value="2026">2026</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+    </select>
+
 </section>
 
 <section id="festivals" class="performance-section">
+
     <p class="section-subtitle">Live Archive</p>
+
     <h2 class="section-title">Festivals & Major Events</h2>
 
     <div id="performance-grid" class="performance-grid"></div>
+
+    <div id="performance-counter" class="performance-counter"></div>
+
 </section>
 
 </main>

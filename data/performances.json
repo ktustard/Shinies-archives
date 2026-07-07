@@ -1,51 +1,397 @@
 [
   {
-    "category": "International",
+    "category": "Philippines",
+    "type": "Concert",
+    "title": "One Dream Concert",
+    "year": "2021",
+    "description": "Virtual concert with BGYO held on November 6–7, 2021."
+  },
+  {
+    "category": "Philippines",
+    "type": "Concert",
+    "title": "BINIverse: The First Solo Concert",
+    "year": "2024",
+    "description": "New Frontier Theater, Manila • June 28–30, 2024."
+  },
+  {
+    "category": "Philippines",
+    "type": "Concert",
+    "title": "Grand BINIverse",
+    "year": "2024",
+    "description": "Smart Araneta Coliseum, Quezon City • November 16–18, 2024."
+  },
+  {
+    "category": "Philippines",
     "type": "Festival",
-    "title": "Coachella",
-    "year": "2026",
-    "description": "Historic international festival milestone for BINI and P-pop."
+    "title": "Tugatog: The Filipino Music Festival",
+    "year": "2022",
+    "description": "SM Mall of Asia Arena, Pasay • July 15, 2022. A major celebration of P-pop."
+  },
+  {
+    "category": "Philippines",
+    "type": "Benefit Concert",
+    "title": "Be You: The World Will Adjust",
+    "year": "2022",
+    "description": "Mall of Asia Arena • July 22, 2022. Advocacy benefit concert headlined by Red Velvet."
+  },
+  {
+    "category": "Philippines",
+    "type": "Festival",
+    "title": "Zark's Fest",
+    "year": "2023",
+    "description": "Makati • May 13, 2023."
   },
   {
     "category": "International",
     "type": "Festival",
-    "title": "Summer Sonic Japan",
-    "year": "2026",
-    "description": "A major Japanese music festival stage during the Signals era."
+    "title": "Spectacle!",
+    "year": "2023",
+    "description": "Singapore • June 11, 2023."
+  },
+  {
+    "category": "Philippines",
+    "type": "Festival",
+    "title": "Malaya Music Fest",
+    "year": "2023",
+    "description": "Parañaque • August 19, 2023."
+  },
+  {
+    "category": "Philippines",
+    "type": "Campus Festival",
+    "title": "UST Annual Paskuhan Concert",
+    "year": "2023",
+    "description": "University of Santo Tomas, Manila • December 21, 2023."
+  },
+    {
+    "category": "Philippines",
+    "type": "Campus Festival",
+    "title": "UST Annual Paskuhan Concert",
+    "year": "2025",
+    "description": "University of Santo Tomas, Manila • December 19, 2025."
+  },
+  {
+    "category": "Philippines",
+    "type": "Campus Festival",
+    "title": "UP Fair: POP Rising",
+    "year": "2024",
+    "description": "Sunken Garden, University of the Philippines Diliman • February 13, 2024."
+  },
+  {
+    "category": "Philippines",
+    "type": "Thanksgiving Concert",
+    "title": "Puregold: Nasa Atin ang Panalo Thanksgiving Concert",
+    "year": "2024",
+    "description": "Araneta Coliseum • July 12, 2024. Performed alongside SB19, Flow G, and SunKissed Lola."
+  },
+  {
+    "category": "International",
+    "type": "P-pop Event",
+    "title": "KCON Los Angeles — Pre-show",
+    "year": "2024",
+    "description": "Crypto.com Arena, Los Angeles • July 27, 2024. Performed Cherry on Top as the first Filipino pop act at KCON."
   },
   {
     "category": "Philippines",
     "type": "Festival",
     "title": "Aurora Music Festival",
-    "year": "TBA",
-    "description": "A major local music festival appearance in the Philippines."
+    "year": "2025",
+    "description": "Clark Global City, Pampanga • May 3–4, 2025. First-ever music act to headline and sell out both days of the Philippines' biggest music festival."
+  },
+  {
+    "category": "Philippines",
+    "type": "Festival",
+    "title": "Wonderful Moments Music Festival",
+    "year": "2026",
+    "description": "SMDC Festival Grounds, Parañaque • February 8, 2026."
+  },
+  {
+    "category": "Philippines",
+    "type": "Festival",
+    "title": "Kaogma Festival",
+    "year": "2026",
+    "description": "Pili, Camarines Sur • May 30, 2026. Headlined the open-air festival with Coachella energy before a capacity crowd."
   },
   {
     "category": "Philippines",
     "type": "P-pop Event",
     "title": "PPOP CON",
     "year": "TBA",
-    "description": "A major local P-pop event and performance stage."
+    "description": "Major annual P-pop convention and concert."
+  },
+
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Bulacan, Philippines",
+    "year": "2025",
+    "description": "Philippine Arena • February 15, 2025."
   },
   {
     "category": "World Tour",
-    "type": "Tour",
-    "title": "BINIverse World Tour",
-    "year": "2024–2025",
-    "description": "BINI's first major international tour, bringing their music to global audiences."
+    "type": "BINIverse World Tour",
+    "title": "Dubai, UAE",
+    "year": "2025",
+    "description": "Coca-Cola Arena • May 18, 2025."
   },
   {
     "category": "World Tour",
-    "type": "Tour",
-    "title": "Signals World Tour",
+    "type": "BINIverse World Tour",
+    "title": "London, United Kingdom",
+    "year": "2025",
+    "description": "OVO Arena Wembley • May 25, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "New York City, USA",
+    "year": "2025",
+    "description": "The Theater at Madison Square Garden • May 31, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Washington, D.C., USA",
+    "year": "2025",
+    "description": "June 3, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Boston, Massachusetts, USA",
+    "year": "2025",
+    "description": "June 4, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Rosemont / Chicago, Illinois, USA",
+    "year": "2025",
+    "description": "June 6, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Houston, Texas, USA",
+    "year": "2025",
+    "description": "June 9, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Dallas, Texas, USA",
+    "year": "2025",
+    "description": "June 10, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Las Vegas, Nevada, USA",
+    "year": "2025",
+    "description": "June 13, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Los Angeles, California, USA",
+    "year": "2025",
+    "description": "June 14, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Temecula, California, USA",
+    "year": "2025",
+    "description": "June 15, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "San Francisco, California, USA",
+    "year": "2025",
+    "description": "June 17, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Seattle, Washington, USA",
+    "year": "2025",
+    "description": "June 20, 2025."
+  },
+  {
+    "category": "World Tour",
+    "type": "BINIverse World Tour",
+    "title": "Vancouver, Canada",
+    "year": "2025",
+    "description": "June 21, 2025."
+  },
+
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Manila, Philippines",
     "year": "2026",
-    "description": "The global tour era connected to Signals, Summer Sonic, and international promotions."
+    "description": "SM Mall of Asia Arena • June 20–21, 2026."
   },
   {
     "category": "World Tour",
-    "type": "Tour",
-    "title": "Next World Tour",
-    "year": "Future",
-    "description": "Placeholder for future touring milestones."
-  }
+    "type": "Signals World Tour",
+    "title": "Cebu, Philippines",
+    "year": "2026",
+    "description": "SM Seaside Cebu Arena • July 11, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Los Angeles, California, USA",
+    "year": "2026",
+    "description": "August 5, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Rohnert Park, California, USA",
+    "year": "2026",
+    "description": "August 7, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Las Vegas, Nevada, USA",
+    "year": "2026",
+    "description": "August 8, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "San Diego, California, USA",
+    "year": "2026",
+    "description": "August 9, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Vancouver, Canada",
+    "year": "2026",
+    "description": "August 18, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Calgary, Canada",
+    "year": "2026",
+    "description": "August 21, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Edmonton, Canada",
+    "year": "2026",
+    "description": "August 22, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Winnipeg, Canada",
+    "year": "2026",
+    "description": "August 24, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Toronto, Canada",
+    "year": "2026",
+    "description": "August 27, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Brooklyn, New York, USA",
+    "year": "2026",
+    "description": "August 28, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Melbourne, Australia",
+    "year": "2026",
+    "description": "September 20, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Auckland, New Zealand",
+    "year": "2026",
+    "description": "September 25, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Sydney, Australia",
+    "year": "2026",
+    "description": "September 27, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "Singapore",
+    "year": "2026",
+    "description": "October 25, 2026."
+  },
+  {
+    "category": "World Tour",
+    "type": "Signals World Tour",
+    "title": "New Taipei City, Taiwan",
+    "year": "2026",
+    "description": "New Taipei City Exhibition Hall • November 15, 2026."
+  },
+
+  {
+    "category": "International",
+    "type": "Festival",
+    "title": "Coachella Valley Music and Arts Festival",
+    "year": "2026",
+    "description": "Indio, California • April 10 & 17, 2026."
+  },
+  {
+    "category": "International",
+    "type": "Festival",
+    "title": "Summer Sonic Osaka",
+    "year": "2026",
+    "description": "Osaka, Japan • August 14, 2026."
+  },
+  {
+    "category": "International",
+    "type": "Festival",
+    "title": "Summer Sonic Tokyo",
+    "year": "2026",
+    "description": "Tokyo, Japan • August 16, 2026."
+  },
+  {
+    "category": "International",
+    "type": "Special Event",
+    "title": "ASAP Natin 'To California",
+    "year": "2024",
+    "description": "Toyota Arena, Ontario, California • August 3, 2024."
+  },
+  {
+  "category": "Others",
+  "type": "Special Appearance",
+  "title": "MAGPASHEEKAT",
+  "year": "2026",
+  "description": "Sheena's birthday celebration with Drag Queens and dance showcases."
+},
+{
+  "category": "Others",
+  "type": "Special Appearance",
+  "title": "SHEEnayaw",
+  "year": "2026",
+  "description": "Sheena joined the dance classes with her Shinies, organized by BINI Sheena OFC Team."
+},
+{
+  "category": "Philippines",
+  "type": "Concert",
+  "title": "BINIfied",
+  "year": "2025",
+  "description": "Philippine Arena, Bulacan • November 29, 2025. The \"BINIfied\" concert by BINI is set to be a grand celebration of the group's achievements and a thank-you to their fans."
+}
 ]

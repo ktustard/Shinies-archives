@@ -1,35 +1,58 @@
+let performances = [];
+
 const grid = document.getElementById("performance-grid");
 const buttons = document.querySelectorAll(".filter-btn");
+const yearFilter = document.getElementById("yearFilter");
+const counter = document.getElementById("performance-counter");
 
-let performances = [];
+let currentFilter = "all";
 
 async function loadPerformances() {
     const response = await fetch("../data/performances.json");
     performances = await response.json();
-
-    displayPerformances("all");
+    displayPerformances();
 }
 
-function displayPerformances(filter) {
+function displayPerformances() {
     grid.innerHTML = "";
 
-    const filtered = filter === "all"
-        ? performances
-        : performances.filter(item => item.category === filter);
+    let filtered = [...performances];
+
+    if (currentFilter !== "all") {
+        filtered = filtered.filter(item => item.category === currentFilter);
+    }
+
+    if (yearFilter.value !== "all") {
+        filtered = filtered.filter(item => item.year === yearFilter.value);
+    }
+
+    filtered.sort((a, b) => {
+        const yearA = parseInt(a.year) || 0;
+        const yearB = parseInt(b.year) || 0;
+        return yearB - yearA;
+    });
 
     filtered.forEach(item => {
         const card = document.createElement("article");
-        card.classList.add("performance-card");
+        card.className = "performance-card";
 
         card.innerHTML = `
             <span>${item.category}</span>
+
             <h3>${item.title}</h3>
-            <p class="performance-meta">${item.year} • ${item.type}</p>
+
+            <p class="performance-meta">
+                ${item.type} • ${item.year}
+            </p>
+
             <p>${item.description}</p>
         `;
 
         grid.appendChild(card);
     });
+
+    counter.textContent =
+        `Showing ${filtered.length} of ${performances.length} performances`;
 }
 
 buttons.forEach(button => {
@@ -37,8 +60,11 @@ buttons.forEach(button => {
         buttons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
 
-        displayPerformances(button.dataset.filter);
+        currentFilter = button.dataset.filter;
+        displayPerformances();
     });
 });
+
+yearFilter.addEventListener("change", displayPerformances);
 
 loadPerformances();
