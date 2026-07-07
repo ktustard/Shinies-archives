@@ -203,7 +203,21 @@
     "year": "2024–2025",
     "hero": "../images/eras/biniverse.jpg",
     "description": "BINI embarked on their first major international tour, expanding their global reach and preparing for even larger stages.",
-    "songs": [],
+    "songs": [
+      "Blink Twice (BINIverse Album)",
+      "Zero Pressure (BINIverse Album)",
+      "Secrets ft eaJ (BINIverse Album)",
+      "Out Of My Head (BINIverse Album)",
+      "Cherry On Top (BINIverse Album)",
+      "Cherry On Top - BiniMo Remix (BINIverse Album)",
+      "Shagidi (FLAMES Album)",
+      "First Luv (FLAMES Album)",
+      "Sweeth Tooth (FLAMES Album)",
+      "Paruparo (FLAMES Album)",
+      "Infinity (FLAMES Album)",
+      "Katabi (FLAMES Album)",
+      "Bikini (FLAMES Album)"
+    ],
     "achievements": [
       "First international tour",
       "Expanded global fanbase",
@@ -220,7 +234,15 @@
       },
       {
         "title": "Global Recognition",
-        "description": "Prepared the group for even larger international festivals."
+        "description": "Prepared the group for even larger international festivals like Coachella."
+      },
+      {
+        "title": "First Luv Released",
+        "description": "Released single \"First Luv\" which is part of FLAMES Album release."
+      },
+      {
+        "title": "Sweeth Tooth Released",
+        "description": "Released single \"Sweeth Tooth\" which is part of FLAMES Album release."
       }
     ],
     "gallery": [
