@@ -1,31 +1,34 @@
-let performancesData = [];
-
 const grid = document.getElementById("performance-grid");
 const buttons = document.querySelectorAll(".filter-btn");
 
+let performances = [];
+
 async function loadPerformances() {
     const response = await fetch("../data/performances.json");
-    performancesData = await response.json();
+    performances = await response.json();
 
-    renderPerformances("all");
+    displayPerformances("all");
 }
 
-function renderPerformances(filter) {
+function displayPerformances(filter) {
     grid.innerHTML = "";
 
     const filtered = filter === "all"
-        ? performancesData
-        : performancesData.filter(item => item.category === filter);
+        ? performances
+        : performances.filter(item => item.category === filter);
 
     filtered.forEach(item => {
-        grid.innerHTML += `
-            <article class="performance-card">
-                <span>${item.category} • ${item.type}</span>
-                <h3>${item.title}</h3>
-                <strong>${item.year}</strong>
-                <p>${item.description}</p>
-            </article>
+        const card = document.createElement("article");
+        card.classList.add("performance-card");
+
+        card.innerHTML = `
+            <span>${item.category}</span>
+            <h3>${item.title}</h3>
+            <p class="performance-meta">${item.year} • ${item.type}</p>
+            <p>${item.description}</p>
         `;
+
+        grid.appendChild(card);
     });
 }
 
@@ -34,7 +37,7 @@ buttons.forEach(button => {
         buttons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
 
-        renderPerformances(button.dataset.filter);
+        displayPerformances(button.dataset.filter);
     });
 });
 
