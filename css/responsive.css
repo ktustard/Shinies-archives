@@ -49,3 +49,44 @@ font-size:3.5rem;
 }
 
 }
+
+/* ========================================
+   ABOUT SECTION - MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .about-content{
+        display:flex;
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .about-text{
+        width:100%;
+    }
+
+    .about-text h2{
+        font-size:2.2rem;
+        line-height:1.2;
+    }
+
+    .about-text p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .about-info{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+        width:100%;
+    }
+
+    .about-card{
+        width:100%;
+        min-width:0;
+        box-sizing:border-box;
+    }
+
+}
