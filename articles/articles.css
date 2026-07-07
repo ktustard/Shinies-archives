@@ -128,3 +128,76 @@
     flex:1;
 
 }
+
+.article-collection{
+    margin-bottom:90px;
+}
+
+.collection-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:30px;
+}
+
+.collection-count{
+    color:var(--primary-light);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:.85rem;
+    margin-bottom:10px;
+}
+
+.collection-header h3{
+    font-size:2rem;
+    color:white;
+}
+
+.collection-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.article-card{
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    transition:.3s;
+}
+
+.article-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+
+.article-image{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    display:block;
+}
+
+.article-content{
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    flex:1;
+}
+
+.year-filter{
+    padding:12px 20px;
+    border-radius:999px;
+    background:rgba(255,255,255,.06);
+    color:white;
+    border:1px solid var(--border);
+    font-family:'Poppins', sans-serif;
+}
+
+.year-filter option{
+    color:black;
+}
