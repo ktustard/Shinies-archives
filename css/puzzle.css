@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#22173d;
+    --card:#2d2149;
+    --card2:#342652;
+    --primary:#a56bff;
+    --primary-light:#d8b7ff;
+    --text:#ffffff;
+    --text-light:rgba(255,255,255,.75);
+}
+
+body{
+    min-height:100vh;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Poppins',sans-serif;
+}
+
+.puzzle-page{
+    width:min(900px,90%);
+    margin:auto;
+    padding:60px 0 100px;
+}
+
+.back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 22px;
+    border-radius:999px;
+    text-decoration:none;
+    color:var(--primary-light);
+    border:1px solid rgba(165,107,255,.25);
+    background:rgba(165,107,255,.10);
+    transition:.3s;
+}
+
+.back-link:hover{
+    background:rgba(165,107,255,.18);
+    border-color:var(--primary);
+}
+
+.section-subtitle{
+    text-align:center;
+    color:var(--primary-light);
+    text-transform:uppercase;
+    letter-spacing:7px;
+    font-size:1rem;
+    margin:50px 0 8px;
+}
+
+.section-title{
+    text-align:center;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:clamp(2.8rem,7vw,4.8rem);
+    margin-bottom:55px;
+}
+
+.puzzle-card{
+    position:relative;
+    overflow:hidden;
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    padding:36px;
+    box-shadow:0 20px 70px rgba(0,0,0,.35);
+}
+
+.puzzle-card::before{
+    content:"";
+    position:absolute;
+    inset:-35%;
+    background:radial-gradient(circle,rgba(165,107,255,.28),transparent 70%);
+    z-index:0;
+}
+
+.puzzle-card>*{
+    position:relative;
+    z-index:1;
+}
+
+.puzzle-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:28px;
+    color:var(--primary-light);
+    font-weight:600;
+}
+
+#shuffleBtn{
+    padding:12px 22px;
+    border:0;
+    border-radius:999px;
+    background:var(--primary);
+    color:white;
+    font-family:'Poppins',sans-serif;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.puzzle-board{
+    width:min(540px,100%);
+    aspect-ratio:1;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap:6px;
+    background:rgba(255,255,255,.08);
+    padding:6px;
+    border-radius:22px;
+}
+
+.puzzle-tile{
+    border:none;
+    border-radius:14px;
+    background-image:url("../images/hero/sheena-placeholder.png.jpeg");
+    background-size:300% 300%;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.puzzle-tile:hover{
+    transform:scale(.98);
+    outline:2px solid var(--primary-light);
+}
+
+.puzzle-tile.empty{
+    background:none;
+    background-color:rgba(255,255,255,.05);
+    cursor:default;
+}
+
+.puzzle-message{
+    margin-top:28px;
+    text-align:center;
+    color:var(--text-light);
+}
+
+.puzzle-message.win{
+    color:var(--primary-light);
+    font-weight:700;
+}
+
+@media(max-width:768px){
+    .puzzle-page{
+        width:92%;
+    }
+
+    .puzzle-card{
+        padding:24px;
+    }
+
+    .puzzle-top{
+        flex-direction:column;
+        gap:15px;
+        align-items:flex-start;
+    }
+}
