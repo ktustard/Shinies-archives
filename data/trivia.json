@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is Sheena's fandom called?",
+    "choices": ["Shinies", "Amity", "Stars", "Bunnies"],
+    "answer": "Shinies"
+  },
+  {
+    "question": "What is Sheena's position in BINI?",
+    "choices": ["Leader", "Main Dancer", "Main Rapper", "Visual"],
+    "answer": "Main Dancer"
+  },
+  {
+    "question": "What year did Sheena join Pinoy Big Brother: Otso?",
+    "choices": ["2018", "2019", "2020", "2021"],
+    "answer": "2018"
+  },
+  {
+    "question": "Which BINI song choreography is Sheena credited for creating?",
+    "choices": ["Pantropiko", "Lagi", "Born to Win", "Cherry on Top"],
+    "answer": "Pantropiko"
+  },
+  {
+    "question": "What is Sheena's birthday?",
+    "choices": ["May 9, 2004", "June 4, 2004", "May 8, 2004", "April 10, 2004"],
+    "answer": "May 9, 2004"
+  }
+]
