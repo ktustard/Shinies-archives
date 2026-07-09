@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Which era is known as Sheena's Pinoy Big Brother journey?",
+    "image": "../images/eras/pbb.jpg",
+    "choices": ["PBB Otso", "Star Hunt Academy", "Born To Win", "Pantropiko"],
+    "answer": "PBB Otso"
+  },
+  {
+    "question": "Which era introduced BINI's pre-debut remake?",
+    "image": "../images/eras/dcn.jpg",
+    "choices": ["Da Coconut Nut", "Feel Good", "Signals", "BINIverse"],
+    "answer": "Da Coconut Nut"
+  },
+  {
+    "question": "Which era includes BINI's official debut?",
+    "image": "../images/eras/borntowin.jpg",
+    "choices": ["Born To Win", "Pantropiko", "Coachella Era", "Signals Era"],
+    "answer": "Born To Win"
+  },
+  {
+    "question": "Which era is connected to BINI's viral summer anthem?",
+    "image": "../images/eras/pantropiko.jpg",
+    "choices": ["Pantropiko", "Feel Good", "Star Hunt Academy", "BINIverse"],
+    "answer": "Pantropiko"
+  },
+  {
+    "question": "Which era represents BINI's historic Coachella milestone?",
+    "image": "../images/eras/coachella.jpg",
+    "choices": ["Coachella Era", "Signals Era", "Born To Win", "Da Coconut Nut"],
+    "answer": "Coachella Era"
+  }
+]
