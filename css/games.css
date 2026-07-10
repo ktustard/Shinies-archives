@@ -94,3 +94,10 @@
         grid-template-columns:1fr;
     }
 }
+.games-counter{
+    margin-top:55px;
+    text-align:center;
+    color:var(--primary-light);
+    font-size:.95rem;
+    letter-spacing:.5px;
+}
