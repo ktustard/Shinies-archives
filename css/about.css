@@ -100,6 +100,10 @@
 
 }
 
+/* ==========================
+   INFO GRID
+========================== */
+
 .info-grid{
 
     display:grid;
@@ -110,9 +114,13 @@
 
 }
 
+/* ==========================
+   INFO CARDS
+========================== */
+
 .info-card{
 
-    background:rgba(255,255,255,.04);
+    background:rgba(255,255,255,.05);
 
     border:1px solid rgba(255,255,255,.08);
 
@@ -122,17 +130,17 @@
 
     min-width:0;
 
-    transition:.3s ease;
+    transition:.35s;
 
 }
 
 .info-card:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-8px);
 
-    border-color:var(--primary);
+    border-color:#b96dff;
 
-    box-shadow:0 15px 40px rgba(124,77,255,.18);
+    box-shadow:0 15px 35px rgba(185,109,255,.25);
 
 }
 
@@ -140,7 +148,7 @@
 
     display:block;
 
-    color:var(--primary-light);
+    color:#d8b4fe;
 
     font-size:.9rem;
 

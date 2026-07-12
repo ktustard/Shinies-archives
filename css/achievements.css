@@ -1,3 +1,7 @@
+/* ==========================
+   ACHIEVEMENTS SECTION
+========================== */
+
 .achievements{
 
     width:min(1200px,90%);
@@ -5,6 +9,11 @@
     padding:120px 0;
 
 }
+
+
+/* ==========================
+   FILTERS
+========================== */
 
 .achievement-tabs{
 
@@ -19,9 +28,10 @@
 
 }
 
-/* ===========================
+
+/* ==========================
    FILTER BUTTONS
-=========================== */
+========================== */
 
 .achievement-filter,
 .achievement-year-filter{
@@ -52,43 +62,57 @@
 
     cursor:pointer;
 
-    transition:all .3s ease;
+    transition:.35s;
 
 }
 
-/* Hover */
+
+/* ==========================
+   FILTER HOVER
+========================== */
 
 .achievement-filter:hover,
 .achievement-year-filter:hover{
-    border-color:#b57cff;
-    color:#c084fc;
-    background:rgba(255,255,255,.08);
 
-    border-color:var(--primary);
+    transform:translateY(-3px);
 
-    color:var(--primary-light);
+    border-color:#b96dff;
+
+    color:#d8b4fe;
+
+    background:rgba(185,109,255,.08);
+
+    box-shadow:0 10px 25px rgba(185,109,255,.20);
 
 }
 
-/* Active */
+
+/* ==========================
+   ACTIVE FILTER
+========================== */
 
 .achievement-filter.active{
-    background:rgba(255,255,255,.05);
 
-    color:var(--primary-light);
+    color:#d8b4fe;
 
-    border-color:var(--primary);
-    border-color:#b57cff;
-    color:#c084fc;
+    border-color:#b96dff;
+
+    background:rgba(185,109,255,.10);
+
+    box-shadow:0 10px 25px rgba(185,109,255,.20);
+
 }
 
 .achievement-filter.active:hover{
-    color:var(--primary-light);
+
+    color:#d8b4fe;
+
 }
 
-/* ===========================
+
+/* ==========================
    YEAR DROPDOWN
-=========================== */
+========================== */
 
 .achievement-year-filter{
 
@@ -100,7 +124,7 @@
 
     background:
         rgba(255,255,255,.05)
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E")
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23d8b4fe' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E")
         no-repeat right 18px center;
 
 }
@@ -109,9 +133,9 @@
 
     outline:none;
 
-    border-color:var(--primary);
+    border-color:#b96dff;
 
-    box-shadow:0 0 20px rgba(170,120,255,.25);
+    box-shadow:0 10px 25px rgba(185,109,255,.20);
 
 }
 
@@ -121,9 +145,10 @@
 
 }
 
-/* ===========================
+
+/* ==========================
    GRID
-=========================== */
+========================== */
 
 .achievement-grid{
 
@@ -135,77 +160,42 @@
 
 }
 
-/* ===========================
-   CARD
-=========================== */
+
+/* ==========================
+   ACHIEVEMENT CARD
+========================== */
 
 .achievement-card{
 
-    position:relative;
-
-    overflow:hidden;
-
-    isolation:isolate;
-
     padding:28px;
 
-    border-radius:24px;
+    border-radius:18px;
 
     background:rgba(255,255,255,.05);
 
     border:1px solid rgba(255,255,255,.08);
 
-    transition:all .35s ease;
+    transition:.35s;
 
 }
 
-.achievement-card::before{
 
-    content:"";
-
-    position:absolute;
-
-    inset:-40%;
-
-    background:radial-gradient(
-
-        circle,
-
-        rgba(170,120,255,.30) 0%,
-
-        rgba(170,120,255,.12) 40%,
-
-        transparent 75%
-
-    );
-
-    opacity:0;
-
-    transform:scale(.8);
-
-    transition:.45s;
-
-    z-index:-1;
-
-}
+/* SAME GLOW AS TIMELINE */
 
 .achievement-card:hover{
 
     transform:translateY(-8px);
 
-    border-color:var(--primary);
+    border-color:#b96dff;
 
-    box-shadow:0 18px 45px rgba(120,70,210,.28);
-
-}
-
-.achievement-card:hover::before{
-
-    opacity:1;
-
-    transform:scale(1.2);
+    box-shadow:0 15px 35px rgba(185,109,255,.25);
 
 }
+
+
+/* ==========================
+   CARD CONTENT
+========================== */
 
 .achievement-card span{
 
@@ -213,7 +203,7 @@
 
     margin-bottom:14px;
 
-    color:var(--primary-light);
+    color:#d8b4fe;
 
     text-transform:uppercase;
 
@@ -255,9 +245,10 @@
 
 }
 
-/* ===========================
+
+/* ==========================
    COUNTER
-=========================== */
+========================== */
 
 .achievement-counter{
 
@@ -265,7 +256,7 @@
 
     text-align:center;
 
-    color:var(--primary-light);
+    color:#d8b4fe;
 
     font-size:.95rem;
 
@@ -273,9 +264,10 @@
 
 }
 
-/* ===========================
+
+/* ==========================
    MOBILE
-=========================== */
+========================== */
 
 @media(max-width:768px){
 

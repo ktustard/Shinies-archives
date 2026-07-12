@@ -1,0 +1,248 @@
+.site-footer{
+    margin-top:100px;
+    padding:70px 5% 30px;
+
+    background:#0c0716;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:white;
+}
+
+.footer-content{
+    width:min(1200px,100%);
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1.5fr .8fr 1fr;
+
+    gap:70px;
+
+    padding-bottom:55px;
+}
+
+.footer-brand h2{
+    margin-bottom:20px;
+
+    font-family:'Space Grotesk',sans-serif;
+    font-size:1.8rem;
+}
+
+.footer-brand p,
+.footer-note p{
+    max-width:480px;
+
+    color:rgba(255,255,255,.68);
+
+    line-height:1.8;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+    gap:12px;
+}
+
+.footer-links h3,
+.footer-note h3{
+    margin-bottom:10px;
+
+    color:var(--primary-light);
+
+    font-size:1rem;
+
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.footer-links a{
+    color:rgba(255,255,255,.72);
+
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+.footer-links a:hover{
+    color:var(--primary-light);
+
+    transform:translateX(4px);
+}
+
+/* ==========================
+   SOCIAL ICONS
+========================== */
+
+.footer-socials{
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-top:28px;
+}
+
+.footer-socials a{
+    width:48px;
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    color:var(--primary-light);
+
+    background:rgba(165,107,255,.08);
+
+    border:1px solid rgba(165,107,255,.22);
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        border-color .3s ease,
+        color .3s ease,
+        box-shadow .3s ease;
+}
+
+.footer-socials i{
+    font-size:1.25rem;
+}
+
+.footer-socials a:hover{
+    transform:translateY(-6px);
+}
+
+/* FACEBOOK */
+
+.footer-socials a[aria-label="Facebook"]:hover{
+    color:white;
+
+    background:#1877F2;
+
+    border-color:#1877F2;
+
+    box-shadow:0 10px 30px rgba(24,119,242,.35);
+}
+
+/* INSTAGRAM */
+
+.footer-socials a[aria-label="Instagram"]:hover{
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #833AB4,
+        #C13584,
+        #E1306C,
+        #F77737
+    );
+
+    border-color:#C13584;
+
+    box-shadow:0 10px 30px rgba(193,53,132,.35);
+}
+
+/* TIKTOK */
+
+.footer-socials a[aria-label="TikTok"]:hover{
+    color:white;
+
+    background:#000;
+
+    border-color:#25F4EE;
+
+    box-shadow:
+        -4px 0 18px rgba(37,244,238,.35),
+        4px 0 18px rgba(254,44,85,.35);
+}
+
+/* X / TWITTER */
+
+.footer-socials a[aria-label="X"]:hover{
+    color:white;
+
+    background:#000;
+
+    border-color:white;
+
+    box-shadow:0 10px 30px rgba(255,255,255,.18);
+}
+
+/* ==========================
+   FOOTER BOTTOM
+========================== */
+
+.footer-bottom{
+    width:min(1200px,100%);
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    gap:20px;
+
+    padding-top:28px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:rgba(255,255,255,.6);
+
+    font-size:.9rem;
+}
+
+.footer-bottom a{
+    color:var(--primary-light);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.footer-bottom a:hover{
+    color:white;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .site-footer{
+        padding:60px 7% 30px;
+    }
+
+    .footer-content{
+        grid-template-columns:1fr;
+
+        gap:45px;
+    }
+
+    .footer-socials{
+        gap:14px;
+    }
+
+    .footer-socials a{
+        width:46px;
+        height:46px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+}

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BINI Sheena Archive</title>
+    <title>BINI Sheena Archives</title>
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/achievements.css">
     <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -34,7 +36,7 @@
 <nav class="navbar">
 
     <div class="logo">
-        🐰 BINI Sheena Archive
+       🐰 BINI Sheena Archives
     </div>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
@@ -471,26 +473,49 @@
     </h2>
 
     <div class="achievement-tabs">
-        <button class="achievement-filter active" data-filter="all">All</button>
-        <button class="achievement-filter" data-filter="BINI">BINI</button>
-        <button class="achievement-filter" data-filter="Sheena">Sheena</button>
 
-        <select id="achievementYearFilter" class="achievement-year-filter">
-            <option value="all">All Years</option>
-            <option value="2026">2026</option>
-            <option value="2025">2025</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
+        <button
+            class="achievement-filter active"
+            data-filter="all">
+            All
+        </button>
+
+        <button
+            class="achievement-filter"
+            data-filter="BINI">
+            BINI
+        </button>
+
+        <button
+            class="achievement-filter"
+            data-filter="Sheena">
+            Sheena
+        </button>
+
+        <select
+            id="achievementYearFilter"
+            class="achievement-year-filter">
+
+            <option value="all">
+                All Years
+            </option>
+
         </select>
+
     </div>
 
-    <div id="achievement-grid" class="achievement-grid"></div>
+    <div
+        id="achievement-grid"
+        class="achievement-grid">
+    </div>
 
-    <div id="achievement-counter" class="achievement-counter"></div>
+    <div
+        id="achievement-counter"
+        class="achievement-counter">
+    </div>
 
 </section>
+
 <section id="articles" class="articles">
 
 </section>
@@ -541,6 +566,99 @@
 <script src="js/animations.js"></script>
 <script src="js/hero.js"></script>
 <script src="js/achievements.js"></script>
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <h2>🐰 BINI Sheena Archive</h2>
+
+            <p>
+                A fan-made digital museum celebrating Sheena Catacutan’s
+                journey, performances, achievements, and unforgettable moments.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Explore</h3>
+
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#timeline">Journey</a>
+            <a href="#discography">Discography</a>
+            <a href="#achievements">Achievements</a>
+            <a href="performances/index.html">Performances</a>
+            <a href="articles/index.html">Articles</a>
+            <a href="#games">Games</a>
+
+        </div>
+
+        <div class="footer-note">
+
+    <h3>Archive Note</h3>
+
+    <p>
+        This website is an independent fan project and is not officially
+        affiliated with BINI, Sheena Catacutan, ABS-CBN, or Star Music.
+    </p>
+
+    <div class="footer-socials">
+
+        <a href="https://www.facebook.com/sheena.mamay"
+           target="_blank"
+           aria-label="Facebook">
+
+            <i class="fab fa-facebook-f"></i>
+
+        </a>
+
+        <a href="https://www.instagram.com/bini_sheena"
+           target="_blank"
+           aria-label="Instagram">
+
+            <i class="fab fa-instagram"></i>
+
+        </a>
+
+        <a href="https://www.tiktok.com/@bini_sheena"
+           target="_blank"
+           aria-label="TikTok">
+
+            <i class="fab fa-tiktok"></i>
+
+        </a>
+
+        <a href="https://x.com/bini_sheena"
+           target="_blank"
+           aria-label="X">
+
+            <i class="fab fa-x-twitter"></i>
+
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            Built with 💜 by Shinies
+        </p>
+
+        <a href="#hero">
+            Back to Top ↑
+        </a>
+
+    </div>
+
+</footer>
 
 </body>
 </html>

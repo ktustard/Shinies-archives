@@ -675,5 +675,61 @@
     "year": "2026",
     "title": "Unang Kilig",
     "description": "Credited for creating the choreography of BINI's song \"Unang Kilig.\""
+  },
+  {
+    "type": "Jhoanna",
+    "category": "Award",
+    "year": "2023",
+    "title": "P-pop Music Awards",
+    "description": "Won P-pop Music Awards: Top Female Leader of the Year"
+  },
+  {
+    "type": "Jhoanna",
+    "category": "Nomination",
+    "year": "2025",
+    "title": "P-pop Music Awards",
+    "description": "Nominated for P-pop Favorite Leader of the Year"
+  },
+  {
+    "type": "Mikha",
+    "category": "Award",
+    "year": "2025",
+    "title": "Sample Award",
+    "description": "Award description."
+  },
+  {
+    "type": "Maloi",
+    "category": "Award",
+    "year": "2025",
+    "title": "Sample Award",
+    "description": "Award description."
+  },
+  {
+    "type": "Aiah",
+    "category": "Award",
+    "year": "2025",
+    "title": "Sample Award",
+    "description": "Award description."
+  },
+  {
+    "type": "Gwen",
+    "category": "Nomination",
+    "year": "2026",
+    "title": "VP Choice Awards",
+    "description": "VP Choice Awards: Female TikTok Face of the Year"
+  },
+  {
+    "type": "Stacey",
+    "category": "Award",
+    "year": "2025",
+    "title": "Sample Award",
+    "description": "Award description."
+  },
+  {
+    "type": "Colet",
+    "category": "Award",
+    "year": "2025",
+    "title": "Sample Award",
+    "description": "Award description."
   }
 ]
