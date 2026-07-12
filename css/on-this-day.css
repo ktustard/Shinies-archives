@@ -1,0 +1,194 @@
+/* ==========================
+   ON THIS DAY
+========================== */
+
+.on-this-day{
+
+    width:min(1000px,90%);
+
+    margin:auto;
+
+    padding:120px 0;
+
+}
+
+
+/* ==========================
+   MEMORY CONTAINER
+========================== */
+
+.today-memory{
+
+    display:grid;
+
+    gap:28px;
+
+}
+
+
+/* ==========================
+   MEMORY CARD
+========================== */
+
+.memory-card{
+
+    display:block;
+
+    padding:42px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    transition:.35s;
+
+}
+
+
+/* SAME GLOW AS TIMELINE */
+
+.memory-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#b96dff;
+
+    box-shadow:0 15px 35px rgba(185,109,255,.25);
+
+}
+
+
+/* ==========================
+   MEMORY CONTENT
+========================== */
+
+.memory-type{
+
+    display:inline-block;
+
+    color:#d8b4fe;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    margin-bottom:14px;
+
+}
+
+
+.memory-year{
+
+    color:rgba(255,255,255,.55);
+
+    font-size:.9rem;
+
+    margin-bottom:10px;
+
+}
+
+
+.memory-card h3{
+
+    color:white;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:clamp(1.8rem,4vw,3rem);
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+
+}
+
+
+.memory-description{
+
+    color:rgba(255,255,255,.78);
+
+    line-height:1.8;
+
+    max-width:750px;
+
+}
+
+
+.memory-link{
+
+    margin-top:28px;
+
+    color:#d8b4fe;
+
+    font-weight:700;
+
+}
+
+
+/* ==========================
+   EMPTY MEMORY
+========================== */
+
+.empty-memory{
+
+    text-align:center;
+
+}
+
+
+.empty-memory:hover{
+
+    transform:none;
+
+}
+
+
+.memory-loading,
+.memory-empty{
+
+    text-align:center;
+
+    color:rgba(255,255,255,.65);
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .on-this-day{
+
+        width:92%;
+
+        padding:80px 0;
+
+    }
+
+
+    .memory-card{
+
+        padding:28px;
+
+    }
+
+
+    .memory-card h3{
+
+        font-size:1.8rem;
+
+    }
+
+}

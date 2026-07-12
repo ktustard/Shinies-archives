@@ -1,0 +1,83 @@
+[
+  {
+    "month": 4,
+    "day": 10,
+    "year": "2026",
+    "title": "BINI Makes History at Coachella",
+    "type": "Historic Performance",
+    "description": "BINI took the Coachella stage, marking a historic international milestone for the group and P-pop.",
+    "link": "performances/index.html"
+  },
+  {
+    "month": 4,
+    "day": 17,
+    "year": "2026",
+    "title": "Coachella Weekend Two",
+    "type": "Historic Performance",
+    "description": "BINI returned to the Coachella stage for their second festival performance.",
+    "link": "performances/index.html"
+  },
+  {
+    "month": 5,
+    "day": 9,
+    "year": "2004",
+    "title": "Sheena Catacutan's Birthday",
+    "type": "Birthday",
+    "description": "Celebrating the birthday of BINI's main dancer, Sheena Catacutan.",
+    "link": "#about"
+  },
+  {
+    "month": 6,
+    "day": 4,
+    "year": "2021",
+    "title": "BINI Official Debut",
+    "type": "Career Milestone",
+    "description": "BINI officially debuted with Born to Win.",
+    "link": "#timeline"
+  },
+  {
+    "month": 6,
+    "day": 28,
+    "year": "2024",
+    "title": "BINIverse: The First Solo Concert",
+    "type": "Concert",
+    "description": "BINI began their first solo concert run at the New Frontier Theater.",
+    "link": "performances/index.html"
+  },
+  {
+    "month": 7,
+    "day": 27,
+    "year": "2024",
+    "title": "BINI at KCON Los Angeles",
+    "type": "International Performance",
+    "description": "BINI performed during the KCON Los Angeles pre-show at Crypto.com Arena.",
+    "link": "performances/index.html"
+  },
+  {
+    "month": 8,
+    "day": 3,
+    "year": "2024",
+    "title": "ASAP Natin 'To California",
+    "type": "International Performance",
+    "description": "BINI performed at Toyota Arena in Ontario, California.",
+    "link": "performances/index.html"
+  },
+  {
+    "month": 10,
+    "day": 15,
+    "year": "2021",
+    "title": "Born to Win Album",
+    "type": "Discography",
+    "description": "BINI released their debut studio album Born to Win.",
+    "link": "#discography"
+  },
+  {
+    "month": 11,
+    "day": 16,
+    "year": "2024",
+    "title": "Grand BINIverse Begins",
+    "type": "Concert",
+    "description": "The Grand BINIverse concert run began at the Smart Araneta Coliseum.",
+    "link": "performances/index.html"
+  }
+]
