@@ -1,0 +1,47 @@
+name: Sync Social Posts
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-socials:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+
+        with:
+          node-version: "24"
+
+      - name: Sync social posts
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+
+        run: node tools/sync-socials.js
+
+      - name: Commit social feed
+        run: |
+          git config user.name "sheeinspired-social-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/social-feed.json
+
+          if git diff --cached --quiet; then
+            echo "No social updates."
+            exit 0
+          fi
+
+          git commit -m "Update social feed"
+          git push
