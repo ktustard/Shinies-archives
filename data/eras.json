@@ -25,10 +25,12 @@
       }
     ],
     "gallery": [
-      "../images/eras/pbb.jpg"
+      {
+        "src": "../images/eras/pbb.jpg",
+        "alt": "Sheena during her PBB Otso era"
+      }
     ]
   },
-
   {
     "id": "sha",
     "title": "Star Hunt Academy",
@@ -47,7 +49,7 @@
       },
       {
         "title": "Developed Her Skills",
-        "description": "Spent months improving her vocals, dance, stage presence and teamwork."
+        "description": "Spent months improving her vocals, dance, stage presence, and teamwork."
       },
       {
         "title": "Chosen as BINI Member",
@@ -55,10 +57,12 @@
       }
     ],
     "gallery": [
-      "../images/eras/sha.jpg"
+      {
+        "src": "../images/eras/sha.jpg",
+        "alt": "Sheena during her Star Hunt Academy training era"
+      }
     ]
   },
-
   {
     "id": "dcn",
     "title": "Da Coconut Nut",
@@ -87,10 +91,12 @@
       }
     ],
     "gallery": [
-      "../images/eras/dcn.jpg"
+      {
+        "src": "../images/eras/dcn.jpg",
+        "alt": "Sheena during BINI's Da Coconut Nut pre-debut era"
+      }
     ]
   },
-
   {
     "id": "borntowin",
     "title": "Born To Win",
@@ -120,10 +126,12 @@
       }
     ],
     "gallery": [
-      "../images/eras/borntowin.jpg"
+      {
+        "src": "../images/eras/borntowin.jpg",
+        "alt": "Sheena during BINI's Born To Win era"
+      }
     ]
   },
-
   {
     "id": "feelgood",
     "title": "Feel Good",
@@ -149,17 +157,19 @@
       },
       {
         "title": "More Live Performances",
-        "description": "The group appeared in more festivals, TV shows and concerts."
+        "description": "The group appeared in more festivals, TV shows, and concerts."
       }
     ],
     "gallery": [
-      "../images/eras/feelgood.jpg"
+      {
+        "src": "../images/eras/feelgood.jpg",
+        "alt": "Sheena during BINI's Feel Good era"
+      }
     ]
   },
-
   {
     "id": "pantropiko",
-    "title": "Pantropiko / Talaarawan",
+    "title": "Pantropiko",
     "year": "2023–2024",
     "hero": "../images/eras/pantropiko.jpg",
     "description": "Pantropiko became a nationwide phenomenon followed by Talaarawan, launching BINI into mainstream success.",
@@ -193,10 +203,12 @@
       }
     ],
     "gallery": [
-      "../images/eras/pantropiko.jpg"
+      {
+        "src": "../images/eras/pantropiko.jpg",
+        "alt": "Sheena during BINI's Pantropiko and Talaarawan era"
+      }
     ]
   },
-
   {
     "id": "biniverse",
     "title": "BINIverse World Tour",
@@ -206,13 +218,13 @@
     "songs": [
       "Blink Twice (BINIverse Album)",
       "Zero Pressure (BINIverse Album)",
-      "Secrets ft eaJ (BINIverse Album)",
+      "Secrets ft. eaJ (BINIverse Album)",
       "Out Of My Head (BINIverse Album)",
       "Cherry On Top (BINIverse Album)",
       "Cherry On Top - BiniMo Remix (BINIverse Album)",
       "Shagidi (FLAMES Album)",
       "First Luv (FLAMES Album)",
-      "Sweeth Tooth (FLAMES Album)",
+      "Sweet Tooth (FLAMES Album)",
       "Paruparo (FLAMES Album)",
       "Infinity (FLAMES Album)",
       "Katabi (FLAMES Album)",
@@ -239,18 +251,20 @@
       },
       {
         "title": "First Luv Released",
-        "description": "Released single \"First Luv\" which is part of FLAMES Album release."
+        "description": "Released the single \"First Luv,\" which is part of the FLAMES album."
       },
       {
-        "title": "Sweeth Tooth Released",
-        "description": "Released single \"Sweeth Tooth\" which is part of FLAMES Album release."
+        "title": "Sweet Tooth Released",
+        "description": "Released the single \"Sweet Tooth,\" which is part of the FLAMES album."
       }
     ],
     "gallery": [
-      "../images/eras/biniverse.jpg"
+      {
+        "src": "../images/eras/biniverse.jpg",
+        "alt": "Sheena during the BINIverse World Tour era"
+      }
     ]
   },
-
   {
     "id": "coachella",
     "title": "Coachella Era",
@@ -277,7 +291,7 @@
       },
       {
         "title": "Grammy Museum: Global Spin Live",
-        "description": "The Nation's Girl Group BINI continued to introduce themselves to the world with a special guest appearance at the Grammy Museum"
+        "description": "The Nation's Girl Group BINI continued to introduce themselves to the world with a special guest appearance at the Grammy Museum."
       },
       {
         "title": "Summer Sonic Japan Announcement",
@@ -289,16 +303,18 @@
       }
     ],
     "gallery": [
-      "../images/eras/coachella.jpg"
+      {
+        "src": "../images/eras/coachella.jpg",
+        "alt": "Sheena during BINI's historic Coachella era"
+      }
     ]
   },
-
   {
     "id": "signals",
     "title": "Signals Era",
     "year": "2026–Present",
     "hero": "../images/eras/signals.jpg",
-    "description": "The Signals era represents BINI's continued global expansion through their third album, Summer Sonic, and worldwide promotions.",
+    "description": "The Signals era represents BINI's continued global expansion through their fourth EP, Summer Sonic, and worldwide promotions.",
     "songs": [
       "Blush",
       "Unang Kilig",
@@ -308,23 +324,23 @@
       "Step Back"
     ],
     "achievements": [
-      "Released 4th EP",
+      "Released fourth EP",
       "Signals World Tour",
-      "Performed at Summer Sonic Japan",
+      "Summer Sonic Japan appearance",
       "Continued global promotions"
     ],
     "timeline": [
-          {
+      {
         "title": "Unang Kilig Released",
-        "description": "Sheena choreographed the chorus of Unang Kilig"
+        "description": "Sheena choreographed the chorus of \"Unang Kilig.\""
       },
       {
-        "title": "Signals Album",
-        "description": "Released BINI's third full-length album."
+        "title": "Signals",
+        "description": "BINI entered the Signals era with a new collection of songs and global promotions."
       },
       {
         "title": "Signals World Tour",
-        "description": "Embarked on a world tour to promote the Signals album."
+        "description": "Embarked on a world tour connected to the Signals era."
       },
       {
         "title": "DreamWorks' Forgotten Island",
@@ -332,7 +348,7 @@
       },
       {
         "title": "Summer Sonic Japan",
-        "description": "Performed at one of Asia's biggest music festivals."
+        "description": "BINI is set to appear at one of Asia's major music festivals."
       },
       {
         "title": "Global Promotions",
@@ -340,7 +356,10 @@
       }
     ],
     "gallery": [
-      "../images/eras/signals.jpg"
+      {
+        "src": "../images/eras/signals.jpg",
+        "alt": "Sheena during BINI's Signals era"
+      }
     ]
   }
 ]

@@ -6,136 +6,222 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Career Era</title>
+<title>Career Era | BINI Sheena Archive</title>
 
 <link rel="stylesheet" href="../css/variables.css">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/era-page.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="era-page">
+<main class="era-page">
 
 <a href="../index.html#eras" class="back">
-← Back to Career Eras
+    ← Back to Career Eras
 </a>
+
 
 <!-- HERO -->
 
 <section class="hero-banner">
 
-<img id="hero" src="" alt="">
+    <img id="hero" src="" alt="Career era image">
 
-<div class="hero-overlay">
+    <div class="hero-overlay">
 
-<p class="year" id="year"></p>
+        <p class="year" id="year"></p>
 
-<h1 id="title"></h1>
+        <h1 id="title"></h1>
 
-<p id="description"></p>
-
-</div>
-
-</section>
-
-<!-- STATS -->
-
-<section class="stats">
-
-<div class="stat-card">
-
-<h3 id="stat-year">2018</h3>
-
-<span>Year</span>
-
-</div>
-
-<div class="stat-card">
-
-<h3 id="stat-songs">0</h3>
-
-<span>Songs</span>
-
-</div>
-
-<div class="stat-card">
-
-<h3 id="stat-achievements">0</h3>
-
-<span>Achievements</span>
-
-</div>
-
-</section>
-
-<!-- OVERVIEW -->
-
-<section class="content-card">
-
-<h2>Overview</h2>
-
-<p id="overview"></p>
-
-</section>
-
-<section class="content-card">
-
-    <h2>Timeline</h2>
-
-    <div id="timeline-events" class="era-timeline">
+        <p id="description"></p>
 
     </div>
 
 </section>
 
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <h3 id="stat-year">—</h3>
+
+        <span>Year</span>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3 id="stat-songs">0</h3>
+
+        <span>Songs</span>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3 id="stat-achievements">0</h3>
+
+        <span>Achievements</span>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3 id="stat-gallery">0</h3>
+
+        <span>Gallery Photos</span>
+
+    </div>
+
+</section>
+
+
+<!-- OVERVIEW -->
+
+<section class="content-card">
+
+    <p class="era-section-label">
+        Archive Overview
+    </p>
+
+    <h2>Overview</h2>
+
+    <p id="overview"></p>
+
+</section>
+
+
+<!-- TIMELINE -->
+
+<section class="content-card">
+
+    <p class="era-section-label">
+        Era Journey
+    </p>
+
+    <h2>Timeline</h2>
+
+    <div id="timeline-events" class="era-timeline"></div>
+
+</section>
+
+
 <!-- SONGS -->
 
 <section class="content-card">
 
-<h2>Songs Released</h2>
+    <p class="era-section-label">
+        Discography
+    </p>
 
-<ul id="songs"></ul>
+    <h2>Songs Released</h2>
+
+    <ul id="songs" class="era-list"></ul>
 
 </section>
+
 
 <!-- ACHIEVEMENTS -->
 
 <section class="content-card">
 
-<h2>Achievements</h2>
+    <p class="era-section-label">
+        Milestones
+    </p>
 
-<ul id="achievements"></ul>
+    <h2>Achievements</h2>
+
+    <ul id="achievements" class="era-list"></ul>
 
 </section>
+
 
 <!-- GALLERY -->
 
-<section class="content-card">
+<section class="content-card gallery-section">
 
-<h2>Gallery</h2>
+    <div class="gallery-heading">
 
-<div id="gallery" class="gallery-grid"></div>
+        <div>
+
+            <p class="era-section-label">
+                Visual Archive
+            </p>
+
+            <h2>Gallery</h2>
+
+        </div>
+
+        <p id="gallery-count" class="gallery-count">
+            0 photos
+        </p>
+
+    </div>
+
+    <div id="gallery" class="gallery-grid"></div>
 
 </section>
 
-<!-- NEXT ERA -->
 
-<section class="next-era">
+<!-- LIGHTBOX -->
 
-<a id="next-era" href="#">
+<div id="gallery-lightbox" class="gallery-lightbox">
 
-Next Era →
+    <button
+        id="lightbox-close"
+        class="lightbox-close"
+        aria-label="Close image viewer">
+        ×
+    </button>
 
-</a>
+    <button
+        id="lightbox-prev"
+        class="lightbox-nav lightbox-prev"
+        aria-label="Previous image">
+        ‹
+    </button>
 
-</section>
+    <img
+        id="lightbox-image"
+        src=""
+        alt="Era gallery image">
+
+    <button
+        id="lightbox-next"
+        class="lightbox-nav lightbox-next"
+        aria-label="Next image">
+        ›
+    </button>
+
+    <p id="lightbox-counter" class="lightbox-counter"></p>
 
 </div>
+
+
+<!-- ERA NAVIGATION -->
+
+<section class="era-navigation">
+
+    <a id="previous-era" href="#">
+        ← Previous Era
+    </a>
+
+    <a id="next-era" href="#">
+        Next Era →
+    </a>
+
+</section>
+
+</main>
 
 <script src="eras.js"></script>
 
