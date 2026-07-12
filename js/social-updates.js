@@ -8,351 +8,93 @@ const socialButtons =
 const socialAccounts = {
 
     tiktok: {
-        name: "TikTok",
         username: "@bini_sheena",
         url: "https://www.tiktok.com/@bini_sheena"
-    },
-
-    instagram: {
-        name: "Instagram",
-        username: "@bini_sheena",
-        url: "https://www.instagram.com/bini_sheena/"
-    },
-
-    x: {
-        name: "X",
-        username: "@bini_sheena",
-        url: "https://x.com/bini_sheena"
-    },
-
-    facebook: {
-        name: "Facebook",
-        username: "Sheena",
-        url: "https://www.facebook.com/sheena.mamay"
     }
 
 };
 
 
-let socialData = {
-
-    x: []
-
-};
-
-
-async function loadSocialFeed() {
-
-    try {
-
-        const response =
-            await fetch(
-                "data/social-feed.json",
-                {
-                    cache: "no-store"
-                }
-            );
-
-
-        if (!response.ok) {
-
-            throw new Error(
-                "Could not load social-feed.json"
-            );
-
-        }
-
-
-        socialData =
-            await response.json();
-
-    }
-
-    catch (error) {
-
-        console.error(
-            "Social feed failed to load:",
-            error
-        );
-
-    }
-
-
-    displaySocialFeed("tiktok");
-
-}
-
-
-function displaySocialFeed(platform) {
-
-    const account =
-        socialAccounts[platform];
-
+function displaySocialFeed(platform){
 
     socialFeed.innerHTML = "";
 
 
-    if (platform === "x") {
+    if(platform === "tiktok"){
 
-        displayXPosts();
-
-        return;
-
-    }
-
-
-    if (platform === "tiktok") {
-
-        socialFeed.innerHTML = `
-
-            <div class="social-embed-card">
-
-                <blockquote
-                    class="tiktok-embed"
-                    cite="${account.url}"
-                    data-unique-id="bini_sheena"
-                    data-embed-type="creator">
-
-                    <section>
-
-                        <a
-                            href="${account.url}"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            ${account.username}
-
-                        </a>
-
-                    </section>
-
-                </blockquote>
-
-            </div>
-
-        `;
-
-
-        loadTikTok();
-
+        displayTikTok();
 
         return;
 
     }
 
 
-    displayProfileCard(
-        account,
-        platform
-    );
+    if(platform === "instagram"){
+
+        displayInstagram();
+
+        return;
+
+    }
+
+
+    if(platform === "x"){
+
+        displayCuratorX();
+
+        return;
+
+    }
 
 }
 
 
-function displayXPosts() {
+/* ==========================
+   TIKTOK
+========================== */
 
-    const posts =
-        Array.isArray(socialData.x)
-            ? socialData.x
-            : [];
+function displayTikTok(){
 
+    const account =
+        socialAccounts.tiktok;
 
-    if (posts.length === 0) {
-
-        socialFeed.innerHTML = `
-
-            <div class="social-empty">
-
-                <span class="social-platform">
-                    X / Twitter
-                </span>
-
-                <h3>
-                    No synced posts yet.
-                </h3>
-
-                <p>
-                    Run the Sync Social Posts workflow on GitHub.
-                </p>
-
-            </div>
-
-        `;
-
-
-        return;
-
-    }
-
-
-    const grid =
-        document.createElement("div");
-
-
-    grid.className =
-        "social-post-grid";
-
-
-    posts.forEach(post => {
-
-        const card =
-            document.createElement("article");
-
-
-        card.className =
-            "social-post-card";
-
-
-        const date =
-            post.createdAt
-                ? new Date(
-                    post.createdAt
-                ).toLocaleDateString(
-                    "en-US",
-                    {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric"
-                    }
-                )
-                : "";
-
-
-        const image =
-            post.media?.find(
-                item => item.url
-            );
-
-
-        card.innerHTML = `
-
-            <div class="social-post-header">
-
-                ${
-                    post.profileImage
-                        ? `
-                        <img
-                            src="${post.profileImage}"
-                            alt="${post.name}"
-                            class="social-avatar"
-                        >
-                        `
-                        : ""
-                }
-
-                <div>
-
-                    <strong>
-                        ${post.name}
-                    </strong>
-
-                    <span>
-                        @${post.username}
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <p class="social-post-text">
-
-                ${escapeHTML(post.text)}
-
-            </p>
-
-
-            ${
-                image
-                    ? `
-                    <img
-                        src="${image.url}"
-                        alt="X post media"
-                        class="social-post-image"
-                        loading="lazy"
-                    >
-                    `
-                    : ""
-            }
-
-
-            <div class="social-post-footer">
-
-                <span>
-                    ${date}
-                </span>
-
-                <a
-                    href="${post.url}"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    View Post →
-
-                </a>
-
-            </div>
-
-        `;
-
-
-        grid.appendChild(card);
-
-    });
-
-
-    socialFeed.appendChild(grid);
-
-}
-
-
-function displayProfileCard(
-    account,
-    platform
-) {
 
     socialFeed.innerHTML = `
 
-        <a
-            href="${account.url}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-profile-card ${platform}">
+        <div class="social-embed-card">
 
-            <span class="social-platform">
+            <blockquote
+                class="tiktok-embed"
+                cite="${account.url}"
+                data-unique-id="bini_sheena"
+                data-embed-type="creator">
 
-                ${account.name}
+                <section>
 
-            </span>
+                    <a
+                        href="${account.url}"
+                        target="_blank"
+                        rel="noopener noreferrer">
 
-            <h3>
+                        ${account.username}
 
-                ${account.username}
+                    </a>
 
-            </h3>
+                </section>
 
-            <p>
+            </blockquote>
 
-                View Sheena's latest
-                ${account.name}
-                posts directly on her profile.
-
-            </p>
-
-            <div class="social-open">
-
-                Open ${account.name} →
-
-            </div>
-
-        </a>
+        </div>
 
     `;
+
+
+    loadTikTokEmbed();
 
 }
 
 
-function loadTikTok() {
+function loadTikTokEmbed(){
 
     const oldScript =
         document.querySelector(
@@ -360,7 +102,7 @@ function loadTikTok() {
         );
 
 
-    if (oldScript) {
+    if(oldScript){
 
         oldScript.remove();
 
@@ -383,20 +125,143 @@ function loadTikTok() {
 }
 
 
-function escapeHTML(value) {
+/* ==========================
+   INSTAGRAM / ELFSIGHT
+========================== */
 
-    const element =
-        document.createElement("div");
+function displayInstagram(){
+
+    socialFeed.innerHTML = `
+
+        <div class="instagram-feed-wrapper">
+
+            <div
+                class="elfsight-app-eaf5813a-fe97-4e77-9fc3-80b9940bc634"
+                data-elfsight-app-lazy>
+            </div>
+
+        </div>
+
+    `;
 
 
-    element.textContent =
-        value || "";
-
-
-    return element.innerHTML;
+    loadElfsight();
 
 }
 
+
+function loadElfsight(){
+
+    const oldScript =
+        document.querySelector(
+            'script[data-elfsight-feed]'
+        );
+
+
+    if(oldScript){
+
+        oldScript.remove();
+
+    }
+
+
+    const script =
+        document.createElement("script");
+
+
+    script.src =
+        "https://elfsightcdn.com/platform.js";
+
+
+    script.async = true;
+
+
+    script.setAttribute(
+        "data-elfsight-feed",
+        "true"
+    );
+
+
+    document.body.appendChild(script);
+
+}
+
+
+/* ==========================
+   X / CURATOR
+========================== */
+
+function displayCuratorX(){
+
+    socialFeed.innerHTML = `
+
+        <div class="curator-wrapper">
+
+            <div id="curator-feed-default-feed-layout">
+
+                <a
+                    href="https://curator.io"
+                    target="_blank"
+                    class="curator-link">
+
+                    Powered by Curator.io
+
+                </a>
+
+            </div>
+
+        </div>
+
+    `;
+
+
+    loadCurator();
+
+}
+
+
+function loadCurator(){
+
+    const oldScript =
+        document.querySelector(
+            'script[data-curator-social-feed]'
+        );
+
+
+    if(oldScript){
+
+        oldScript.remove();
+
+    }
+
+
+    const script =
+        document.createElement("script");
+
+
+    script.src =
+        "https://cdn.curator.io/published/a358d117-623c-468f-93bf-01d819ee7e4c.js";
+
+
+    script.async = true;
+
+    script.charset = "UTF-8";
+
+
+    script.setAttribute(
+        "data-curator-social-feed",
+        "true"
+    );
+
+
+    document.body.appendChild(script);
+
+}
+
+
+/* ==========================
+   FILTER BUTTONS
+========================== */
 
 socialButtons.forEach(button => {
 
@@ -424,4 +289,4 @@ socialButtons.forEach(button => {
 });
 
 
-loadSocialFeed();
+displaySocialFeed("tiktok");

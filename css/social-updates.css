@@ -33,6 +33,7 @@
 
 }
 
+
 .social-filter{
 
     min-height:56px;
@@ -59,6 +60,7 @@
 
 }
 
+
 .social-filter:hover,
 .social-filter.active{
 
@@ -68,13 +70,15 @@
 
     background:rgba(185,109,255,.10);
 
-    box-shadow:0 10px 25px rgba(185,109,255,.20);
+    box-shadow:
+        0 10px 25px
+        rgba(185,109,255,.20);
 
 }
 
 
 /* ==========================
-   FEED
+   SOCIAL FEED
 ========================== */
 
 .social-feed{
@@ -85,182 +89,10 @@
 
 
 /* ==========================
-   X POST GRID
+   TIKTOK
 ========================== */
 
-.social-post-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(
-        auto-fit,
-        minmax(300px,1fr)
-    );
-
-    gap:25px;
-
-}
-
-
-/* ==========================
-   X POST CARD
-========================== */
-
-.social-post-card{
-
-    display:flex;
-
-    flex-direction:column;
-
-    overflow:hidden;
-
-    padding:28px;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:18px;
-
-    transition:.35s;
-
-}
-
-.social-post-card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:#b96dff;
-
-    box-shadow:0 15px 35px rgba(185,109,255,.25);
-
-}
-
-
-/* ==========================
-   POST HEADER
-========================== */
-
-.social-post-header{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:14px;
-
-    margin-bottom:22px;
-
-}
-
-.social-avatar{
-
-    width:48px;
-
-    height:48px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-}
-
-.social-post-header strong{
-
-    display:block;
-
-    color:white;
-
-}
-
-.social-post-header span{
-
-    display:block;
-
-    color:#d8b4fe;
-
-    font-size:.85rem;
-
-}
-
-
-/* ==========================
-   POST CONTENT
-========================== */
-
-.social-post-text{
-
-    color:rgba(255,255,255,.82);
-
-    line-height:1.8;
-
-    white-space:pre-wrap;
-
-    overflow-wrap:anywhere;
-
-}
-
-.social-post-image{
-
-    width:100%;
-
-    max-height:380px;
-
-    object-fit:cover;
-
-    margin-top:22px;
-
-    border-radius:14px;
-
-}
-
-
-/* ==========================
-   POST FOOTER
-========================== */
-
-.social-post-footer{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:15px;
-
-    margin-top:auto;
-
-    padding-top:25px;
-
-}
-
-.social-post-footer span{
-
-    color:rgba(255,255,255,.55);
-
-    font-size:.85rem;
-
-}
-
-.social-post-footer a{
-
-    color:#d8b4fe;
-
-    text-decoration:none;
-
-    font-weight:700;
-
-}
-
-
-/* ==========================
-   TIKTOK / PROFILE CARD
-========================== */
-
-.social-embed-card,
-.social-profile-card,
-.social-empty{
+.social-embed-card{
 
     width:100%;
 
@@ -268,7 +100,7 @@
 
     margin:auto;
 
-    padding:35px;
+    padding:30px;
 
     background:rgba(255,255,255,.05);
 
@@ -278,77 +110,101 @@
 
 }
 
-.social-profile-card{
-
-    display:block;
-
-    color:white;
-
-    text-decoration:none;
-
-    transition:.35s;
-
-}
-
-.social-profile-card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:#b96dff;
-
-    box-shadow:0 15px 35px rgba(185,109,255,.25);
-
-}
-
-.social-platform{
-
-    display:block;
-
-    margin-bottom:15px;
-
-    color:#d8b4fe;
-
-    text-transform:uppercase;
-
-    letter-spacing:3px;
-
-    font-size:.82rem;
-
-    font-weight:600;
-
-}
-
-.social-profile-card h3,
-.social-empty h3{
-
-    font-size:2rem;
-
-    margin-bottom:15px;
-
-}
-
-.social-profile-card p,
-.social-empty p{
-
-    color:rgba(255,255,255,.75);
-
-    line-height:1.8;
-
-}
-
-.social-open{
-
-    margin-top:28px;
-
-    color:#d8b4fe;
-
-    font-weight:700;
-
-}
 
 .tiktok-embed{
 
     margin:0 auto !important;
+
+}
+
+
+/* ==========================
+   INSTAGRAM / ELFSIGHT
+========================== */
+
+.instagram-feed-wrapper{
+
+    width:100%;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+.elfsight-app-eaf5813a-fe97-4e77-9fc3-80b9940bc634{
+
+    width:100%;
+
+}
+
+
+/* ==========================
+   X / CURATOR
+========================== */
+
+.curator-wrapper{
+
+    width:100%;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+.curator-link{
+
+    display:none !important;
+
+}
+
+
+#curator-feed-default-feed-layout{
+
+    width:100%;
+
+}
+
+
+#curator-feed-default-feed-layout .crt-post{
+
+    border-radius:18px !important;
+
+    overflow:hidden !important;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08) !important;
+
+    transition:.35s !important;
+
+}
+
+
+#curator-feed-default-feed-layout .crt-post:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#b96dff !important;
+
+    box-shadow:
+        0 15px 35px
+        rgba(185,109,255,.25) !important;
 
 }
 
@@ -367,6 +223,7 @@
 
     }
 
+
     .social-tabs{
 
         justify-content:flex-start;
@@ -381,11 +238,13 @@
 
     }
 
+
     .social-tabs::-webkit-scrollbar{
 
         display:none;
 
     }
+
 
     .social-filter{
 
@@ -393,15 +252,18 @@
 
     }
 
-    .social-post-grid{
 
-        grid-template-columns:1fr;
+    .social-embed-card{
+
+        padding:15px;
 
     }
 
-    .social-post-card{
 
-        padding:24px;
+    .instagram-feed-wrapper,
+    .curator-wrapper{
+
+        padding:15px;
 
     }
 

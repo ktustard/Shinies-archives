@@ -1,3 +1,35 @@
 {
-  "x": []
+  "x": [
+    {
+      "platform": "x",
+      "username": "bini_sheena",
+      "name": "Sheena Catacutan",
+      "text": "Sample X post from Sheena. Replace this text with the actual post caption.",
+      "createdAt": "2026-07-12",
+      "url": "https://x.com/bini_sheena",
+      "media": []
+    }
+  ],
+  "instagram": [
+    {
+      "platform": "instagram",
+      "username": "bini_sheena",
+      "name": "Sheena Catacutan",
+      "text": "Sample Instagram post. Replace this with the actual caption.",
+      "createdAt": "2026-07-12",
+      "url": "https://www.instagram.com/bini_sheena/",
+      "media": []
+    }
+  ],
+  "facebook": [
+    {
+      "platform": "facebook",
+      "username": "sheena.mamay",
+      "name": "Sheena Catacutan",
+      "text": "Sample Facebook post. Replace this with the actual post text.",
+      "createdAt": "2026-07-12",
+      "url": "https://www.facebook.com/sheena.mamay",
+      "media": []
+    }
+  ]
 }
