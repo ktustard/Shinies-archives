@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/social-updates.css">
     <link rel="stylesheet" href="css/games.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/archive-search.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/on-this-day.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +43,9 @@
 
     <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
         ☰
+    </button>
+    <button id="archiveSearchBtn" class="archive-search-btn" aria-label="Search archive">
+    <i class="fa-solid fa-magnifying-glass"></i>
     </button>
 
     <ul class="nav-links" id="navLinks">
@@ -626,6 +630,7 @@
 <script src="js/on-this-day.js"></script>
 <script src="https://www.tiktok.com/embed.js" async></script>
 <script src="js/social-updates.js"></script>
+<script src="js/archive-search.js"></script>
 
 <footer class="site-footer">
 
@@ -719,6 +724,45 @@
     </div>
 
 </footer>
+<div id="archiveSearch" class="archive-search">
+
+    <div class="archive-search-panel">
+
+        <div class="search-header">
+
+            <div>
+                <p>Archive Search</p>
+                <h2>Find a Memory</h2>
+            </div>
+
+            <button id="closeArchiveSearch" class="close-search" aria-label="Close search">
+                ×
+            </button>
+
+        </div>
+
+        <div class="search-input-wrapper">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                id="archiveSearchInput"
+                type="search"
+                placeholder="Search Coachella, Pantropiko, Sheena..."
+                autocomplete="off"
+            >
+
+        </div>
+
+        <p id="archiveSearchCount" class="archive-search-count">
+            Start typing to search the archive.
+        </p>
+
+        <div id="archiveSearchResults" class="archive-search-results"></div>
+
+    </div>
+
+</div>
 
 </body>
 </html>

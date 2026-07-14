@@ -1,0 +1,413 @@
+/* ==========================
+   SEARCH BUTTON
+========================== */
+
+.archive-search-btn{
+
+    width:44px;
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.archive-search-btn:hover{
+
+    transform:translateY(-3px);
+
+    color:#d8b4fe;
+
+    border-color:#b96dff;
+
+    box-shadow:0 10px 25px rgba(185,109,255,.20);
+
+}
+
+
+/* ==========================
+   SEARCH OVERLAY
+========================== */
+
+.archive-search{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:10000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding:70px 5%;
+
+    background:rgba(7,3,15,.92);
+
+    backdrop-filter:blur(14px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    overflow-y:auto;
+
+}
+
+.archive-search.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/* ==========================
+   SEARCH PANEL
+========================== */
+
+.archive-search-panel{
+
+    width:min(900px,100%);
+
+    padding:40px;
+
+    background:#1a1029;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:26px;
+
+    box-shadow:0 25px 80px rgba(0,0,0,.45);
+
+}
+
+
+/* ==========================
+   HEADER
+========================== */
+
+.search-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    margin-bottom:35px;
+
+}
+
+.search-header p{
+
+    margin:0 0 8px;
+
+    color:#d8b4fe;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.8rem;
+
+}
+
+.search-header h2{
+
+    margin:0;
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:2.5rem;
+
+}
+
+.close-search{
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:2.5rem;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close-search:hover{
+
+    color:#c084fc;
+
+    transform:rotate(90deg);
+
+}
+
+
+/* ==========================
+   INPUT
+========================== */
+
+.search-input-wrapper{
+
+    position:relative;
+
+}
+
+.search-input-wrapper i{
+
+    position:absolute;
+
+    left:22px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#d8b4fe;
+
+}
+
+#archiveSearchInput{
+
+    width:100%;
+
+    padding:19px 22px 19px 58px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    outline:none;
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:1rem;
+
+    transition:.35s;
+
+}
+
+#archiveSearchInput:focus{
+
+    border-color:#b96dff;
+
+    box-shadow:0 0 25px rgba(185,109,255,.18);
+
+}
+
+#archiveSearchInput::placeholder{
+
+    color:rgba(255,255,255,.45);
+
+}
+
+
+/* ==========================
+   COUNT
+========================== */
+
+.archive-search-count{
+
+    margin:22px 0;
+
+    color:rgba(255,255,255,.6);
+
+    font-size:.9rem;
+
+}
+
+
+/* ==========================
+   RESULTS
+========================== */
+
+.archive-search-results{
+
+    display:grid;
+
+    gap:16px;
+
+}
+
+.archive-search-result{
+
+    display:block;
+
+    padding:24px;
+
+    color:white;
+
+    text-decoration:none;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    transition:.35s;
+
+}
+
+.archive-search-result:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#b96dff;
+
+    box-shadow:0 15px 35px rgba(185,109,255,.25);
+
+}
+
+.search-result-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:12px;
+
+}
+
+.search-result-type{
+
+    color:#d8b4fe;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+}
+
+.search-result-year{
+
+    color:rgba(255,255,255,.5);
+
+    font-size:.85rem;
+
+}
+
+.archive-search-result h3{
+
+    margin:0 0 10px;
+
+    font-size:1.3rem;
+
+}
+
+.archive-search-result p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.72);
+
+    line-height:1.7;
+
+}
+
+.search-result-link{
+
+    display:inline-block;
+
+    margin-top:18px;
+
+    color:#d8b4fe;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+}
+
+
+/* ==========================
+   EMPTY
+========================== */
+
+.search-empty{
+
+    padding:35px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.65);
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .archive-search{
+
+        padding:25px 4%;
+
+    }
+
+    .archive-search-panel{
+
+        padding:25px;
+
+        border-radius:20px;
+
+    }
+
+    .search-header h2{
+
+        font-size:2rem;
+
+    }
+
+    #archiveSearchInput{
+
+        font-size:.9rem;
+
+    }
+
+}
